@@ -8,21 +8,21 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "北大猫咪图鉴",
+    "navigationBarTitleText": "高校小动物保护组织索引",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "selectedColor":"#94070a",
+    "selectedColor":"#557e56",
     "color": "#888888",
     "list": [
       {
-        "text": "查猫",
+        "text": "查看组织",
         "pagePath": "pages/index/index"
       },
       {
-        "text": "科普",
+        "text": "搜索周围",
         "pagePath": "pages/science/science"
       },
       {

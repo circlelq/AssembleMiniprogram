@@ -139,7 +139,7 @@ data: {
     console.log("e.detail.value");
     if(e.detail.value) {
     wx.navigateTo({
-      url: '/pages/cats/' + e.detail.value + '/' + e.detail.value,
+      url: '/pages/organization/' + e.detail.value + '/' + e.detail.value,
     })
   }
    },
@@ -153,6 +153,21 @@ data: {
        }
      })
    },
+
+   naviToMini:function(e){
+    wx.navigateToMiniProgram({
+      appId: '',
+      path: 'page/index/index?id=123',
+      extraData: {
+        foo: 'bar'
+      },
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
+      }
+    })
+   }
+   
 
 })
 

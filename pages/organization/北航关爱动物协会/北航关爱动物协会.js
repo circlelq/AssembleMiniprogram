@@ -12,6 +12,7 @@ Page({
     let users = wx.getStorageSync('user');
     if (res.from === 'button') { }
     return {
+      path: 'pages/about/about',  // 路径，传递参数到指定页面。
       success: function (res) { }
     }
   },
@@ -27,7 +28,17 @@ Page({
      
     }
   })
-  }
+  },  
+  copy1: function (e) {
+    var self = this;
+    wx.setClipboardData({
+      data: '2218371150@qq.com',//需要复制的内容
+      success: function (res) {
+        // self.setData({copyTip:true}),
+       
+      }
+    })
+    },
   
 })
 

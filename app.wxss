@@ -49,8 +49,8 @@
   margin-left: 40rpx;
   margin-right: 40rpx;
   line-height:25rpx;
-  margin-bottom: 20rpx;
-  margin-top: 40rpx;
+  margin-bottom: 30rpx;
+  margin-top: 50rpx;
   font-weight:bold;
   color:black;
   text-align: left;
@@ -107,13 +107,7 @@
   text-align: center;
 }
 
-/*搜索框*/
-.search{
-  font-size: 32rpx;
-  position: absolute;
-  margin-left: 150rpx;
-  margin-top: 25rpx;
-}
+
 
 .avator {
   width: 90rpx;

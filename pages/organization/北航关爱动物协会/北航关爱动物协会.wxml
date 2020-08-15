@@ -1,0 +1,33 @@
+<!--index.wxml-->
+
+<view class= "title">北航关爱动物协会</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/beihang_circle.png" style= "width: 93%;">
+  </image>
+</view>
+
+<view class="body">
+北航关爱动物协会，原北航喵喵社，创立于2014年，致力于北航校园内的流浪动物保护工作，加强动物保护意识，推动动物福利的发展，传播正确对待流浪动物的观念，鼓励关注生命的人们参与到帮助流浪动物的行列中，以切实的行动帮助更多流浪动物改善生存状况，营造一个人与动物的和谐相处、有爱、温暖的校园环境，以更好地救助校园中的流浪动物、保护野生动物为出发点，宣传动物保护知识、改善校园流浪动物生存环境、控制流浪动物数量，并组织相应的宣传与实践活动，秉持平等生命观，倡导人与自然、人与动物和谐共处。目前分为外联部、群护部、救助部、宣传部四大部门，拥有社员近百人，校五星社团。
+</view>
+
+<view class="body">
+目前社团已经形成对于校园流浪动物救助、喂养的日常工作体系，社员分工合作，大大改善了小动物的生活条件， 同时为条件合适的流浪动物寻找领养家庭或寄养小院、进行绝育术，有效控制了校园流浪动物的数量，社团会定期组织社员一同进行动物保护相关活动，例如前往北京的流浪动物寄养小院参加志愿活动、在天使动保、北京领养日义卖领养等活动中担任志愿者等等，并定期组织社员一同进行动物保护相关活动，通过寻求天使动保、中国青年基金会等赞助和自发的义卖、爱心筹款晚宴等活动，为动物保护带来更多资金和活力。</view>
+
+
+<!--<web-view src="https://mp.weixin.qq.com/s/TIuxaXIpwyMR_6JRfU9fPw"> </web-view>-->
+<!-- <official-account></official-account> -->
+
+
+<view class="body">
+
+</view>
+
+<view class="body">
+
+若无救助管理，人类遗弃所致的流浪动物对城市生态环境具有一定的负面影响。为了我们共同的家园，请大家不在任何地方遗弃宠物，支持科学救助，用领养代替购买。
+</view>
+ 
+<view class = "body">
+  有啥问题与建议的话可以发邮件到<text bindtap="copy1" class="copy">2218371150@qq.com</text>
+  </view>
+
