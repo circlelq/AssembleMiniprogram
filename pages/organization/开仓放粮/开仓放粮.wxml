@@ -1,0 +1,85 @@
+<!--index.wxml-->
+
+<view class="title">ECUPL开仓放粮</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/kaicang.png" style="width: 90%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:1rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/kaicang.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+</view>
+
+<text> \n </text>
+
+<view class="body">
+  您好！我们是【ECUPL开仓放粮】，是由华东政法大学学生自发组织的非营利性志愿组织，至今已陪伴华政的猫猫们四年了。
+</view>
+
+<view class="body">
+  开仓放粮自成立后，一直致力于通过喂养、绝育、送养等和平手段，减少华政流浪猫数量，改善校内现有流浪猫生活质量，协调人猫关系，构建和谐校园。
+</view>
+
+<view class="body">
+  同时，我们也在进行着伤病救助的工作，努力让流浪的崽崽们过上没有病痛的幸福猫生。
+</view>
+
+<view class="body">
+  制作【ECUPL猫咪图鉴】的初心是希望大家可以认识并熟悉陪伴在我们身边的小猫咪们。在此特别鸣谢：【北京大学流浪猫关爱协会】及其【燕园猫速查手册】的创作同学对我们的技术支持与帮助！愿两校友谊长存！
+</view>
+
+<view class="body">
+  【Tips】以下是赏猫小贴士，希望您仔细阅读：
+</view>
+
+<view class="body">
+  1. 猫崽们都是高冷的小生物，接受您的美照拍摄！但请勿伸手触摸、逗弄流浪猫，以免受到人身伤害。
+</view>
+
+<view class="body">
+  2. 爱它就不要随意投喂！油盐会对猫咪的肝肾功能造成极大影响，你爱吃的它们不能吃哦~
+</view>
+
+<view class="body">
+  3. 我们会组织喂猫志愿者的猫粮团购，以及定期排班的猫咪投喂。想要领养猫咪/了解/加入我们请关注公众号【ECUPL开仓放粮】。
+</view>
+
+<view class="body">
+  【免责声明】
+</view>
+
+<view class="body">
+  流浪猫天性谨慎，更不会主动攻击人。您在伸手抚摸、逗弄流浪猫时因猫咪反抗造成的一切损伤，我们不对此承担后果。
+</view>
+
+<!-- <text bindtap="saveImage" class="copy">ECUPL开仓放粮</text> -->
+
+
+<text> \n </text>
+
+
+
+<view class="staff">
+
+猫咪资料统计：N.等</view>
+
+
+
+<view class="staff">
+
+供图：王不酸酸，_Estrella，dxr等
+
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="121.196128" latitude="31.054762" scale="10" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

@@ -3,7 +3,7 @@ Page({
   data: {
     markers: [
     {
-      iconPath: "/pages/images/beihang_circle.png",
+      iconPath: "/pages/images/beihang.png",
       name:"北航关爱动物协会",
       id: 2,
       latitude: 39.981795,
@@ -12,7 +12,7 @@ Page({
       height: 50
     },
     {
-      iconPath: "/pages/images/beihang_circle.png",
+      iconPath: "/pages/images/beihang.png",
       name:"北航关爱动物协会",
       id: 1,
       latitude: 40.153517,
@@ -21,11 +21,11 @@ Page({
       height: 50
     },
     {
-    iconPath: "/pages/images/beida_circle.png",
-    name:"北大猫协",
+    iconPath: "/pages/images/kaicang.png",
+    name:"开仓放粮",
     id: 0,
-    latitude: 39.992591,
-    longitude: 116.310700,
+    latitude: 31.054762,
+    longitude: 121.196128,
     width: 50,
     height: 50
   },

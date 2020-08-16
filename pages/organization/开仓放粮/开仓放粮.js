@@ -2,19 +2,12 @@
 
 Page({
   data: {
-    markers: [{
-      iconPath: "/pages/images/beihang.png",
-      id: 1,
-      latitude: 39.981795,
-      longitude: 116.347127,
-      width: 50,
-      height: 50
-    },
+    markers: [
     {
-      iconPath: "/pages/images/beihang.png",
+      iconPath: "/pages/images/kaicang.png",
       id: 0,
-      latitude: 40.153517,
-      longitude: 116.270252,
+      latitude: 31.054762,
+      longitude: 121.196128,
       width: 50,
       height: 50
     },
@@ -23,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/beihang_circle.png',
+      iconPath: '/pages/images/kaicang.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -42,13 +35,11 @@ Page({
   controltap(e) {
     console.log(e.detail.controlId)
   },
-
   //转发功能
   onShareAppMessage: function () {
     let users = wx.getStorageSync('user');
     if (res.from === 'button') { }
     return {
-      path: 'pages/about/about',  // 路径，传递参数到指定页面。
       success: function (res) { }
     }
   },
@@ -64,28 +55,17 @@ Page({
      
     }
   })
-  },  
-  copy1: function (e) {
-    var self = this;
-    wx.setClipboardData({
-      data: '2218371150@qq.com',//需要复制的内容
-      success: function (res) {
-        // self.setData({copyTip:true}),
-       
+  },
+  naviToMini:function(e){
+    wx.navigateToMiniProgram({
+      appId: 'wx007ba3d2623a903e',
+      // path: 'pages/index/index',
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
       }
     })
-    },
-
-    naviToMini:function(e){
-      wx.navigateToMiniProgram({
-        appId: 'wx3d6526675d745e0f',
-        // path: 'pages/index/index',
-        envVersion: 'release',
-        success(res) {
-          // 打开成功
-        }
-      })
-     }
+   }
   
 })
 
