@@ -97,6 +97,12 @@
  margin-left: 150rpx;
 }
 
+/*长分割线样式*/
+.divLineLong{
+  background: #eee;
+  height: 3rpx;
+  margin-left: 40rpx;
+ }
 
 /*猫名称*/
 .cat-name{

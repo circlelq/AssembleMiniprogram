@@ -9,6 +9,8 @@
 
 <text> \n </text>
 
+<view class="divLineLong"></view>
+
 <navigator url="/pages/organization/北大猫协/北大猫协" >
   <view class="catitem">
     <image  class = 'avator ' src="/pages/images/beida_circle.png" mode='aspectFill' ></image>
@@ -24,3 +26,5 @@
     <view class= "cat-name">北航关爱动物协会</view>
   </view>
 </navigator>
+
+<view class="divLineLong"></view>

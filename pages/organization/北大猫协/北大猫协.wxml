@@ -6,10 +6,12 @@
   </image>
 </view>
 
-<text> \n </text>
 
-<view style="display:flex; justify-content:center; align-items:center;">
-<map id="map" longitude="116.310700" latitude="39.992591" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:1rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/beida_circle.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
 </view>
 
 <view class="head1">协会介绍</view>
@@ -43,11 +45,8 @@
 
 <!-- <text bindtap="saveImage" class="copy">北大猫协</text> -->
 
-<view  class = "itemname1">
-  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:1rem;'>
-    <image style="width:3rem;height:3rem;" src="/pages/images/beida_circle.png" ></image>
-    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
-  </view>
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="116.310700" latitude="39.992591" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
 </view>
 
 <text> \n </text>

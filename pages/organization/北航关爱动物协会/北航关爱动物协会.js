@@ -2,11 +2,47 @@
 
 Page({
   data: {
-    screenWidth: 0,
-    screenHeight: 0,
-    imgwidth: 0,
-    imgheight: 0
+    markers: [{
+      iconPath: "/pages/images/beihang_circle.png",
+      id: 1,
+      latitude: 39.981795,
+      longitude: 116.347127,
+      width: 50,
+      height: 50
+    },
+    {
+      iconPath: "/pages/images/beihang_circle.png",
+      id: 0,
+      latitude: 40.153517,
+      longitude: 116.270252,
+      width: 50,
+      height: 50
+    },
+  ],
+    
+
+    controls: [{
+      id: 1,
+      iconPath: '/pages/images/beihang_circle.png',
+      position: {
+        left: 0,
+        top: 300 - 50,
+        width: 50,
+        height: 50
+      },
+      clickable: true
+    }]
   },
+  regionchange(e) {
+    console.log(e.type)
+  },
+  markertap(e) {
+    console.log(e.detail.markerId)
+  },
+  controltap(e) {
+    console.log(e.detail.controlId)
+  },
+
   //转发功能
   onShareAppMessage: function () {
     let users = wx.getStorageSync('user');
@@ -39,6 +75,17 @@ Page({
       }
     })
     },
+
+    naviToMini:function(e){
+      wx.navigateToMiniProgram({
+        appId: 'wx3d6526675d745e0f',
+        // path: 'pages/index/index',
+        envVersion: 'release',
+        success(res) {
+          // 打开成功
+        }
+      })
+     }
   
 })
 

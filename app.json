@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/about/about",
     "pages/logs/logs",
-    "pages/science/science"
+    "pages/map/map"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,7 +23,7 @@
       },
       {
         "text": "搜索周围",
-        "pagePath": "pages/science/science"
+        "pagePath": "pages/map/map"
       },
       {
         "text": "关于",
