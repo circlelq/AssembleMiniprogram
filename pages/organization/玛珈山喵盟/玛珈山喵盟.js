@@ -2,18 +2,12 @@
 
 Page({
   data: {
-    name:"北航关爱动物协会",
-    markers: [{
-      iconPath: "/pages/images/beihang.png",
-      latitude: 39.981795,
-      longitude: 116.347127,
-      width: 50,
-      height: 50
-    },
+    name:"玛珈山喵盟",
+    markers: [
     {
-      iconPath: "/pages/images/beihang.png",
-      latitude: 40.153517,
-      longitude: 116.270252,
+      iconPath: "/pages/images/majiashan.png",
+      latitude: 37.532287,
+      longitude: 122.058250,
       width: 50,
       height: 50
     },
@@ -22,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/beihang.png',
+      iconPath: '/pages/images/majiashan.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -41,7 +35,6 @@ Page({
   controltap(e) {
     console.log(e.detail.controlId)
   },
-
 
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
@@ -79,47 +72,36 @@ Page({
   onPullDownRefresh: function () {
     wx.stopPullDownRefresh()
   },
-  copyTBL: function (e) {
+  copy1: function (e) {
   var self = this;
   wx.setClipboardData({
-    data: '北大猫协',//需要复制的内容
+    data: '1151024249',//需要复制的内容
     success: function (res) {
       // self.setData({copyTip:true}),
      
     }
   })
-  },  
-  copy1: function (e) {
+  },
+  copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '2218371150@qq.com',//需要复制的内容
+      data: '玛珈山喵盟',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
       }
     })
     },
-
-    copy2: function (e) {
-      var self = this;
-      wx.setClipboardData({
-        data: '北航关爱动物',//需要复制的内容
-        success: function (res) {
-          // self.setData({copyTip:true}),
-         
-        }
-      })
-      },
-    naviToMini:function(e){
-      wx.navigateToMiniProgram({
-        appId: 'wx3d6526675d745e0f',
-        // path: 'pages/index/index',
-        envVersion: 'release',
-        success(res) {
-          // 打开成功
-        }
-      })
-     }
+  naviToMini:function(e){
+    wx.navigateToMiniProgram({
+      appId: 'wx66dc76d12eaf7917',
+      // path: 'pages/index/index',
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
+      }
+    })
+   }
   
 })
 

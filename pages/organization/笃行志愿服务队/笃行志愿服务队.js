@@ -2,18 +2,40 @@
 
 Page({
   data: {
-    name:"北航关爱动物协会",
-    markers: [{
-      iconPath: "/pages/images/beihang.png",
-      latitude: 39.981795,
-      longitude: 116.347127,
+    name:"笃行志愿服务队",
+    markers: [
+    {
+      iconPath: "/pages/images/duxing.png",
+      latitude: 23.065118,
+      longitude: 113.390597,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/beihang.png",
-      latitude: 40.153517,
-      longitude: 116.270252,
+      iconPath: "/pages/images/duxing.png",
+      latitude: 23.096717,
+      longitude: 113.298399,
+      width: 50,
+      height: 50
+    },
+    {
+      iconPath: "/pages/images/duxing.png",
+      latitude: 23.200489,
+      longitude: 113.292419,
+      width: 50,
+      height: 50
+    },
+    {
+      iconPath: "/pages/images/duxing.png",
+      latitude: 23.063969,
+      longitude: 113.397682,
+      width: 50,
+      height: 50
+    },
+    {
+      iconPath: "/pages/images/duxing.png",
+      latitude: 23.158311,
+      longitude: 113.358473,
       width: 50,
       height: 50
     },
@@ -21,8 +43,7 @@ Page({
     
 
     controls: [{
-      id: 1,
-      iconPath: '/pages/images/beihang.png',
+      iconPath: '/pages/images/duxing.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -41,8 +62,7 @@ Page({
   controltap(e) {
     console.log(e.detail.controlId)
   },
-
-
+  
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
@@ -76,23 +96,15 @@ Page({
       }
     }
   },
+
   onPullDownRefresh: function () {
     wx.stopPullDownRefresh()
   },
-  copyTBL: function (e) {
-  var self = this;
-  wx.setClipboardData({
-    data: '北大猫协',//需要复制的内容
-    success: function (res) {
-      // self.setData({copyTip:true}),
-     
-    }
-  })
-  },  
+
   copy1: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '2218371150@qq.com',//需要复制的内容
+      data: '笃行志愿服务队',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
@@ -103,23 +115,26 @@ Page({
     copy2: function (e) {
       var self = this;
       wx.setClipboardData({
-        data: '北航关爱动物',//需要复制的内容
+        data: 'dxzyfwd@163.com',//需要复制的内容
         success: function (res) {
           // self.setData({copyTip:true}),
          
         }
       })
       },
-    naviToMini:function(e){
-      wx.navigateToMiniProgram({
-        appId: 'wx3d6526675d745e0f',
-        // path: 'pages/index/index',
-        envVersion: 'release',
-        success(res) {
-          // 打开成功
-        }
-      })
-     }
+
+  naviToMini:function(e){
+    wx.navigateToMiniProgram({
+      appId: 'wx5bd705b2bc91c73b',
+      // path: 'pages/index/index',
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
+      }
+    })
+   },
+
+
   
 })
 

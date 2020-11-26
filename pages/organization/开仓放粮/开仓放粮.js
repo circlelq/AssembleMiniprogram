@@ -2,10 +2,10 @@
 
 Page({
   data: {
+    name:"开仓放粮",
     markers: [
     {
       iconPath: "/pages/images/kaicang.png",
-      id: 0,
       latitude: 31.054762,
       longitude: 121.196128,
       width: 50,
@@ -35,12 +35,38 @@ Page({
   controltap(e) {
     console.log(e.detail.controlId)
   },
-  //转发功能
-  onShareAppMessage: function () {
-    let users = wx.getStorageSync('user');
-    if (res.from === 'button') { }
+
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
     return {
-      success: function (res) { }
+      title: this.data.name,
+      path: '/pages/index/index?pageId='+this.data.name,
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  },
+
+  onShareTimeline: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: this.data.name,
+      path: '/pages/index/index?pageId='+this.data.name,
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
     }
   },
   onPullDownRefresh: function () {
@@ -56,6 +82,16 @@ Page({
     }
   })
   },
+  copy2: function (e) {
+    var self = this;
+    wx.setClipboardData({
+      data: 'ECUPL开仓放粮',//需要复制的内容
+      success: function (res) {
+        // self.setData({copyTip:true}),
+       
+      }
+    })
+    },
   naviToMini:function(e){
     wx.navigateToMiniProgram({
       appId: 'wx007ba3d2623a903e',

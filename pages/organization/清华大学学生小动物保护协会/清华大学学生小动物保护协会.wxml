@@ -1,0 +1,32 @@
+<!--index.wxml-->
+
+<view class="title">清华大学学生小动物保护协会</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/qinghua.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy1" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+</view>
+
+<view class="body">
+清华大学学生小动物保护协会致力于保护在清华内生活的小动物，发扬清华学生的人道主义的关怀和公益精神，保护和维护动物的生存权利和不受虐待权利，改善和提高小动物的生活条件，坚决反对任何虐待、残害小动物的行为和思想。
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="116.326510" latitude="40.003661" scale="13" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

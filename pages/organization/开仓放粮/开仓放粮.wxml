@@ -2,18 +2,21 @@
 
 <view class="title">ECUPL开仓放粮</view>
 <view style="display:flex; justify-content:center; align-items:center;">
-  <image mode="widthFix" src="/pages/images/kaicang.png" style="width: 90%;">
+  <image mode="widthFix" src="/pages/images/kaicang.png" style="width: 80%;">
   </image>
 </view>
 
 <view  class = "itemname1">
-  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:1rem;'>
-    <image style="width:3rem;height:3rem;" src="/pages/images/kaicang.png" ></image>
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
     <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
   </view>
 </view>
 
-<text> \n </text>
 
 <view class="body">
   您好！我们是【ECUPL开仓放粮】，是由华东政法大学学生自发组织的非营利性志愿组织，至今已陪伴华政的猫猫们四年了。
@@ -55,29 +58,10 @@
   流浪猫天性谨慎，更不会主动攻击人。您在伸手抚摸、逗弄流浪猫时因猫咪反抗造成的一切损伤，我们不对此承担后果。
 </view>
 
-<!-- <text bindtap="saveImage" class="copy">ECUPL开仓放粮</text> -->
-
-
-<text> \n </text>
-
-
-
-<view class="staff">
-
-猫咪资料统计：N.等</view>
-
-
-
-<view class="staff">
-
-供图：王不酸酸，_Estrella，dxr等
-
-</view>
-
 <text> \n </text>
 
 <view style="display:flex; justify-content:center; align-items:center;">
-<map id="map" longitude="121.196128" latitude="31.054762" scale="10" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+<map id="map" longitude="121.196128" latitude="31.054762" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
 </view>
 
 

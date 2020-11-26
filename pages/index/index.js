@@ -1,77 +1,55 @@
 Page({
 data: { 
- fostered_catlist: [
-{ name:"小黄鸭"},
-{ name:"杰希"},
-{ name:"尘尘"},
-{ name:"晓雾"},
-{ name:"丑橘"},
-{ name:"芬达"},
-{ name:"果冻"},
-{ name:"玛奇朵"},
-{ name:"幺鸡"},
-{ name:"桂圆"},
-{ name:"土谦"},
-{ name:"山岚"},
-{ name:"车桑子"},
-{ name:"畅蠢"},
-{ name:"茄子"},
-{ name:"卤蛋"},
-{ name:"小蜜蜂"},
-{ name:"卡祖笛"},
-{ name:"sin"},
-{ name:"cos"},
-{ name:"金银朱"},
-{ name:"金平糖"},
-{ name:"金闪闪"},
-{ name:"木糖"},
-{ name:"乌糖"},
-{ name:"嘤宝"},
-{ name:"白露"},
-{ name:"雪媚娘"},
-{ name:"小一"},
-{ name:"雪梨"},
-{ name:"泡泡"},
-{ name:"咖喱"},
-{ name:"鹅黄"},
-{ name:"小米"},
-{ name:"甜橙"},
-{ name:"花木兰"},
-{ name:"七七"},
-],
- unknown_catlist: [
-{ name:"花灵灵"},
-{ name:"豆干"},
-{ name:"棉花糖"},
-{ name:"天狗"},
-{ name:"李美人"},
-{ name:"牛黄"},
-{ name:"桂香"},
-{ name:"花袭人"},
-{ name:"白面"},
-{ name:"鸢尾"},
-{ name:"小芝麻"},
-{ name:"白泽"},
-{ name:"雪竹"},
-{ name:"姜撞奶"},
-{ name:"芝麻糊"},
-],
- dead_catlist: [
-{ name:"小雨点"},
-{ name:"左斑"},
-{ name:"栗子"},
-{ name:"锦缎"},
-{ name:"半糖"},
-{ name:"滑板爸"},
-{ name:"小菊"},
-{ name:"安吉"},
-],
-    screenWidth: 0,
-    screenHeight: 0,
-    imgwidth: 0,
-    imgheight: 0,
-    navbar: ['在校', '毕业', '休学', '喵星'],
-    currentTab: 0,
+ organ_list:[
+  {
+    name:"北航关爱动物协会",
+    pinyin:"beihang",
+  },
+  {
+    name:"东吴狸奴居",
+    pinyin:"dongwu",
+  },
+  {
+    name:"笃行志愿服务队",
+    pinyin:"duxing",
+  },
+  {
+    name:"工程猫音",
+    pinyin:"gongchengmaoyin",
+  },
+  {
+    name:"广东医猫猫",
+    pinyin:"guangdongyi",
+  },
+  {
+    name:"江大动管",
+    pinyin:"jiangda",
+  },
+  {
+     name:"开仓放粮",
+     pinyin:"kaicang",
+  },
+  {
+    name:"清华大学学生小动物保护协会",
+    pinyin:"qinghua",
+  },
+  {
+    name:"玛珈山喵盟",
+    pinyin:"majiashan",
+  },
+  {
+    name:"南审动物保护协会",
+    pinyin:"nanshen",
+  },
+  {
+    name:"萌友小动物保护协会",
+    pinyin:"mengyou",
+  },
+  {
+    name:"中农关协",
+    pinyin:"zhongnong",
+  },
+ ],
   },
    navbarTap: function (e) {
      this.setData({
@@ -91,7 +69,7 @@ data: {
   onLoad: function (options) {
     if (options.pageId) {
       wx.navigateTo({
-        url: '/pages/cats/' + options.pageId + '/' + options.pageId,
+        url: '/pages/organization/' + options.pageId + '/' + options.pageId,
       })
     }
   },

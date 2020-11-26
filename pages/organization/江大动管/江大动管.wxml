@@ -1,0 +1,27 @@
+<!--index.wxml-->
+
+<view class="title">江大动物管理协会</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/jiangda.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+</view>
+
+<view class="body">
+江大动物管理协会（简称江大动管）是由江苏大学在籍爱心学生为管理校园流浪动物日常生活并控制江大流浪动物数量，最终为其提供安全舒适生存环境而成立的社团组织。成员希望能够通过社团活动缓解流浪动物与校园管理两者间矛盾，为江大流浪动物提供基本生存保障，并号召社会各界人士领养流浪动物，为其谋得一方净土。自社团创立以来，成员致力于校园流浪动物的喂养、绝育、疾病救治，同时宣传动物保护与自然平衡思想，从而间接改善社会整体对于流浪动物的保护和重视意识的严重缺乏，保持人与自然的相对平衡。</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="119.514280" latitude="32.199320" scale="13" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

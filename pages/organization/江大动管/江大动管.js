@@ -2,18 +2,12 @@
 
 Page({
   data: {
-    name:"北航关爱动物协会",
-    markers: [{
-      iconPath: "/pages/images/beihang.png",
-      latitude: 39.981795,
-      longitude: 116.347127,
-      width: 50,
-      height: 50
-    },
+    name:"江大动管",
+    markers: [
     {
-      iconPath: "/pages/images/beihang.png",
-      latitude: 40.153517,
-      longitude: 116.270252,
+      iconPath: "/pages/images/jiangda.png",
+      latitude: 32.199320,
+      longitude: 119.514280,
       width: 50,
       height: 50
     },
@@ -22,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/beihang.png',
+      iconPath: '/pages/images/jiangda.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -100,19 +94,9 @@ Page({
     })
     },
 
-    copy2: function (e) {
-      var self = this;
-      wx.setClipboardData({
-        data: '北航关爱动物',//需要复制的内容
-        success: function (res) {
-          // self.setData({copyTip:true}),
-         
-        }
-      })
-      },
     naviToMini:function(e){
       wx.navigateToMiniProgram({
-        appId: 'wx3d6526675d745e0f',
+        appId: 'wx62d96580ab5c16bc',
         // path: 'pages/index/index',
         envVersion: 'release',
         success(res) {

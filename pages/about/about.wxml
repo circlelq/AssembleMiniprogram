@@ -6,7 +6,7 @@
 <view class="head1">小程序介绍</view>
 
 <view class="body">
-此小程序搜集各高校小动物保护组织的信息。欢迎大家加入此小程序，向 circle 提供信息，加入后可随时退出。这个小程序将呈现组织的文字介绍、会徽图片、地理位置、小程序链接（如果有的话）。
+此小程序搜集各高校小动物保护组织的信息。欢迎大家加入此小程序，向 circle 提供信息，加入后可随时退出。
 </view>
 
 <view class="head1">特别注意</view>
@@ -16,17 +16,14 @@
 </view>
 
 <view class="body">
-• 此小程序只是一个索引，不代表任何立场，各社团、组织的立场也不一定相同。
+• 此小程序只是一个索引。
 </view>
-
 
 <view class="body">
 
-• 更多的人会打开你们的小程序，消耗你们的流量。
+• 组织按照拼音首字母进行排序。
 </view>
-<view class="body">
-• 流浪猫可能会暴露在邪恶人士眼里。
-</view>
+
 <view class="body">
 此小程序只介绍组织信息，不介绍具体猫咪信息。考虑到猫咪的安全问题，circle 不建议各位的小程序里填写猫咪的出没地点信息。
 
@@ -35,16 +32,14 @@
 <view class="head1">联系我们</view>
 
 <view class="body">
-欢迎给 circle 的<text bindtap="copy1" class="copy">邮箱</text>发邮件。如果要加入此小程序，请提供文字介绍信息和会徽图片。
+欢迎给 circle 的<text bindtap="copy1" class="copy">邮箱</text>发邮件。如果要加入此小程序，提供文字介绍信息和会徽图片即可。
 </view>
 
 <view class="body">
-小程序所有代码开源，使用 MIT License ，可用于商业用途。<text bindtap="copy2" class="copy">点击</text>复制 GitHub 仓库链接后请在浏览器中粘贴打开。
+小程序所有代码开源，使用 MIT License 。<text bindtap="copy2" class="copy">点击</text>复制 GitHub 仓库链接后请在浏览器中粘贴打开。
 </view>
 
 <!-- <text bindtap="saveImage" class="copy">北大猫协</text> -->
-
-
 
 <!-- <view class="body">
 <navigator url="/pages/donate/donate" >
@@ -54,7 +49,7 @@
 
 <text> \n </text>
 
-<view class="staff">2020-08-11</view>
+<view class="staff">2020-11-25</view>
 
 <view class="staff">
 小程序开发：circle

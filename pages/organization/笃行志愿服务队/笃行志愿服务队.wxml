@@ -1,0 +1,60 @@
+<!--index.wxml-->
+
+<view class="title">笃行志愿服务队</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/duxing.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy1" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mail.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 邮箱 </view>  
+  </view>
+</view>
+
+<view class="head1">
+组织介绍
+</view>
+<view class="body">
+笃行志愿服务队（简称“笃行“）成立于2019年，成员来自中山大学、华南农业大学、广东外语外贸大学等高校，是一个致力于帮助校园中的流浪猫的志愿组织。
+</view>
+<view class="body">
+笃行的日常工作主要是科学管理校园内的流浪猫。我们通过TNR逐步控制校园流浪猫咪数量，通过送养为“小流浪“们找到安定、温暖的居所，通过及时救助守护伤病的流浪猫咪。在一年多的工作当中，笃行共送养了31只猫猫，绝育了37只猫咪，为流浪猫咪们带来更健康的生活同时，也为校园提供了更为和谐的环境。除了面向猫咪的工作外，我们还积极与社会组织合作、开展公益活动；同时还会举办科普小讲座，让人与流浪猫和谐相处的科学观念得到传播。
+</view>
+<view class="body">
+不仅如此，我们还制作了【中大猫谱】小程序，用于记录各校园猫咪的”绝密档案“，大家可以在小程序中认识偶遇的猫咪、上传猫咪萌照、了解与猫咪们相处的”秘籍“、学习救助等科普内容，使得人猫开启科学、友爱的互动。
+</view>
+<view class="head1">
+联系我们
+</view>
+<view class="body">
+欢迎关注公众号【笃行志愿服务队】，可以不定期收获可爱猫片、猫咪小剧场、科学撸猫小知识（甚至可以领养一只小可爱）。你也可以在B站上搜索【笃行猫咪情报站】，视频中活泼的小可爱们一定能虏获你的一键三连。
+笃行志愿服务队邮箱：<text bindtap="copy2" class="copy">dxzyfwd@163.com</text>
+</view>
+<view class="head1">
+写在最后
+</view>
+<view class="body">
+笃行一直以来主张以“TNR”的方式去科学管理猫咪，利用绝育等方式控制猫咪繁殖数量，愿望是创造一个猫猫与两脚兽和谐相处的世界。部分流浪猫野性大，繁殖能力强，在不加控制的情况下，其过度繁殖将会影响人类的正常生活，而流浪猫群体自身也会由于食物资源不足、环境恶劣等问题，生存难度增加，生活质量低下。“TNR”从根源上控制住猫咪的数量，创造人猫互不影响的美好世界。
+</view>
+<view class="body">
+城市中的流浪猫大部分都是被抛弃的家养猫，它们适应了与人亲近的生活方式，并不适合流浪生活，为了防止它们在野外生活时缺乏自我保护的能力以致生命安全遭到威胁，我们应该尽早为其寻找温暖的家。笃行支持以领养代替购买，让更多流浪猫有家可归。当决定成为猫猫的主人时，就应该做好一辈子不抛弃的准备，拒绝遗弃行为，从根源解决流浪猫问题，需要每位两脚兽的共同努力。
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="113.319855" latitude="23.152125" scale="11" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+<text> \n </text>
+

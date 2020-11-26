@@ -2,18 +2,19 @@
 
 Page({
   data: {
-    name:"北航关爱动物协会",
-    markers: [{
-      iconPath: "/pages/images/beihang.png",
-      latitude: 39.981795,
-      longitude: 116.347127,
+    name:"开仓放粮",
+    markers: [
+    {
+      iconPath: "/pages/images/zhongnong.png",
+      latitude: 40.005006,
+      longitude: 116.357164,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/beihang.png",
-      latitude: 40.153517,
-      longitude: 116.270252,
+      iconPath: "/pages/images/zhongnong.png",
+      latitude: 40.026808,
+      longitude: 116.282824,
       width: 50,
       height: 50
     },
@@ -22,7 +23,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/beihang.png',
+      iconPath: '/pages/images/zhongnong.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -41,7 +42,6 @@ Page({
   controltap(e) {
     console.log(e.detail.controlId)
   },
-
 
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
@@ -88,38 +88,27 @@ Page({
      
     }
   })
-  },  
-  copy1: function (e) {
+  },
+  copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '2218371150@qq.com',//需要复制的内容
+      data: '关爱动物ACA',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
       }
     })
     },
-
-    copy2: function (e) {
-      var self = this;
-      wx.setClipboardData({
-        data: '北航关爱动物',//需要复制的内容
-        success: function (res) {
-          // self.setData({copyTip:true}),
-         
-        }
-      })
-      },
-    naviToMini:function(e){
-      wx.navigateToMiniProgram({
-        appId: 'wx3d6526675d745e0f',
-        // path: 'pages/index/index',
-        envVersion: 'release',
-        success(res) {
-          // 打开成功
-        }
-      })
-     }
+  naviToMini:function(e){
+    wx.navigateToMiniProgram({
+      appId: 'wx363c078bd9f48857',
+      // path: 'pages/index/index',
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
+      }
+    })
+   }
   
 })
 

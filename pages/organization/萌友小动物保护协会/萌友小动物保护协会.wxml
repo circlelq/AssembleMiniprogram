@@ -1,0 +1,32 @@
+<!--index.wxml-->
+
+<view class="title">萌友小动物保护协会</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/mengyou.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+</view>
+
+<view class="body">
+  萌友小动物保护协会成立于2015年，社团对位于华东师范大学闵行校区的流浪动物进行全方位的管理。通过对于成年动物进行绝育，未成年动物寻找领养等方式来控制闵行校区内的流浪动物的数量，并且以各种活动来进行帮助流浪动物在校园中更好的生活，创建动物与人和谐共处的环境。
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="121.453726" latitude="31.031482" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+
