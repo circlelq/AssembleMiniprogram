@@ -43,7 +43,7 @@ Page({
   copy1: function (e) {
   var self = this;
   wx.setClipboardData({
-    data: 'circlelq@pku.edu.cn',//需要复制的内容
+    data: 'yuanlq@pku.edu.cn',//需要复制的内容
     success: function (res) {
       // self.setData({copyTip:true}),
      
