@@ -2,35 +2,28 @@
 
 Page({
   data: {
-    name:"东吴狸奴居",
+    name:"大咪和他的朋友们",
     markers: [
-      {
-        iconPath: "/pages/images/dongwu.png",
-        latitude: 31.268074,
-        longitude: 120.732744,
-        width: 50,
-        height: 50
-      }, 
-      {
-        iconPath: "/pages/images/dongwu.png",
-        latitude: 31.305545,
-        longitude: 120.640132,
-        width: 50,
-        height: 50
-      },
-      {
-        iconPath: "/pages/images/dongwu.png",
-        latitude: 31.385012,
-        longitude: 120.6787115,
-        width: 50,
-        height: 50
-      },
+    {
+      iconPath: "/pages/images/damihe.png",
+      latitude: 43.823700,
+      longitude: 125.277184,
+      width: 50,
+      height: 50
+    },
+    {
+      iconPath: "/pages/images/damihe.png",
+      latitude: 43.910283,
+      longitude: 125.267054,
+      width: 50,
+      height: 50
+    },
   ],
     
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/dongwu.png',
+      iconPath: '/pages/images/damihe.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -99,26 +92,16 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '苏大文院研会',//需要复制的内容
+      data: '大咪和他的朋友们',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
       }
     })
     },
-  copy3: function (e) {
-    var self = this;
-    wx.setClipboardData({
-      data: '书香姑苏',//需要复制的内容
-      success: function (res) {
-        // self.setData({copyTip:true}),
-        
-      }
-    })
-    },
   naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wx4122efd7c9924e76',
+      appId: 'wx21c2c05a102ad723',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {

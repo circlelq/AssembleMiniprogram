@@ -1,12 +1,9 @@
 /**app.wxss**/
 .container {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
+  justify-content: center;
+
 } 
 
 .itemname1 {
@@ -68,7 +65,15 @@
   text-align: justify;
 }
 
-
+.search {
+  font-size: 35rpx;
+  /* margin-left: 40rpx; */
+  margin-right: 40rpx;
+  line-height:25rpx;
+  margin-bottom: 30rpx;
+  margin-top: 20rpx;
+  text-align: left;
+}
 
 .bodybold {
   font-weight:bold;
@@ -81,10 +86,20 @@
   border-bottom: 1rpx solid #eee;
 }
 
+.circle{
+  /* height: 100rpx; */
+  margin-top: 60rpx;
+  margin-bottom: 50rpx;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 
 /*每一只猫*/
 .catitem{
-  height: 100rpx;
+  /* height: 100rpx; */
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
   display: flex;
   align-items: center;
   width: 100%;
@@ -95,14 +110,15 @@
  background: #eee;
  height: 3rpx;
  margin-left: 150rpx;
+
 }
 
 /*长分割线样式*/
 .divLineLong{
   background: #eee;
   height: 3rpx;
-  margin-left: 40rpx;
- }
+  margin-left: 40rpx;  
+}
 
 /*猫名称*/
 .cat-name{
@@ -116,8 +132,8 @@
 
 
 .avator {
-  width: 90rpx;
-  height: 90rpx;
+  width: 80rpx;
+  height: 80rpx;
   margin-left: 40rpx;
   position: absolute;
   align-items: center;

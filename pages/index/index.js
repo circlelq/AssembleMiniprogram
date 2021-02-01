@@ -6,6 +6,10 @@ data: {
     pinyin:"beihang",
   },
   {
+    name:"大咪和他的朋友们",
+    pinyin:"damihe",
+  },
+  {
     name:"东吴狸奴居",
     pinyin:"dongwu",
   },
@@ -20,6 +24,10 @@ data: {
   {
     name:"广东医猫猫",
     pinyin:"guangdongyi",
+  },
+  {
+    name:"广商流浪猫保护协会",
+    pinyin:"guangshang",
   },
   {
     name:"江大动管",
@@ -38,12 +46,20 @@ data: {
     pinyin:"majiashan",
   },
   {
+    name:"萌友小动物保护协会",
+    pinyin:"mengyou",
+  },
+  {
     name:"南审动物保护协会",
     pinyin:"nanshen",
   },
   {
-    name:"萌友小动物保护协会",
-    pinyin:"mengyou",
+    name:"SHOU小流浪后援会",
+    pinyin:"SHOU",
+  },  
+  {
+    name:"UAP动物保护协会",
+    pinyin:"UAP",
   },
   {
     name:"中农关协",

@@ -1,16 +1,15 @@
 <!--index.wxml-->
-<text> \n </text>
+<!-- <text> \n </text> -->
 
-<view class="catitem">
+<view class="circle">
 <image  class = 'avator ' src="/pages/images/circle.png" mode='aspectFill' ></image>
-<view class="search">
-<input placeholder="请输入组织名称" bindconfirm="bindconfirmT" placeholder-class="placeholder" />
-</view>
+<input class = 'search' placeholder="请输入组织名称" bindconfirm="bindconfirmT" placeholder-class="placeholder" />
 </view>
 
-<text> \n </text>
-
-<view class="divLineLong"></view>
+<!-- <text> \n </text>  -->
+<view class="container">
+  <view class="divLineLong"></view>
+</view>
 
 <block wx:for="{{organ_list}}">
   <navigator url="/pages/organization/{{item.name}}/{{item.name}}" >
@@ -18,8 +17,6 @@
       <image  class = 'avator ' src="/pages/images/{{item.pinyin}}.png" mode='aspectFill' ></image>
       <view class= "cat-name">{{item.name}}</view> 
     </view>
-  </navigator>
-
-  <view class="divLine"></view>
-  
+    <view class="divLine"></view>
+  </navigator>  
 </block>

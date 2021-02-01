@@ -50,7 +50,7 @@
 <text> \n </text>
 
 <view style="display:flex; justify-content:center; align-items:center;">
-<map id="map" longitude="120.732744" latitude="31.268074" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+<map id="map" longitude="120.687218" latitude="31.329886" scale="11" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
 </view>
 
 

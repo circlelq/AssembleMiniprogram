@@ -6,7 +6,7 @@
 <view class="head1">小程序介绍</view>
 
 <view class="body">
-此小程序搜集各高校小动物保护组织的信息。欢迎大家加入此小程序，向 circle 提供信息，加入后可随时退出。
+此小程序用来搜集各高校小动物保护组织的信息。欢迎大家加入此小程序，向 circle 提供信息，加入后可随时退出。
 </view>
 
 <view class="head1">特别注意</view>
@@ -36,20 +36,16 @@
 </view>
 
 <view class="body">
-小程序所有代码开源，使用 MIT License 。<text bindtap="copy2" class="copy">点击</text>复制 GitHub 仓库链接后请在浏览器中粘贴打开。
+此<text bindtap="copy2" class="copy">小程序</text>所有代码开源，使用 MIT License 。
 </view>
 
-<!-- <text bindtap="saveImage" class="copy">北大猫协</text> -->
-
-<!-- <view class="body">
-<navigator url="/pages/donate/donate" >
-<text class="copy">打赏链接</text>
-</navigator>
-</view> -->
+<view class="body">
+另外，欢迎大家使用<text bindtap="copy3" class="copy">燕园猫速查手册</text>小程序和<text bindtap="copy4" class="copy">中大猫谱</text>的代码，配有视频教学，简单易用。请点击蓝字复制 GitHub 仓库链接后在浏览器中粘贴打开。
+</view>
 
 <text> \n </text>
 
-<view class="staff">2020-11-25</view>
+<view class="staff">2021-01-30</view>
 
 <view class="staff">
 小程序开发：circle

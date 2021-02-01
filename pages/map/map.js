@@ -4,6 +4,69 @@ Page({
   data: {
     markers: [
       {
+        iconPath: "/pages/images/damihe.png",
+        id:"24",
+        name:"大咪和他的朋友们",
+        latitude: 43.823700,
+        longitude: 125.277184,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/damihe.png",
+        id:"23",
+        name:"大咪和他的朋友们",
+        latitude: 43.910283,
+        longitude: 125.267054,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/dongwu.png",
+        id:"22",
+        name:"东吴狸奴居",
+        latitude: 31.305545,
+        longitude: 120.640132,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/dongwu.png",
+        id:"21",
+        name:"东吴狸奴居",
+        latitude: 31.385012,
+        longitude: 120.6787115,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/UAP.png",
+        id:"20",
+        name:"UAP动物保护协会",
+        latitude: 31.9029922,
+        longitude: 118.918108,
+        width: 50,
+        height: 50
+      },      
+      {
+        iconPath: "/pages/images/SHOU.png",
+        id:"19",
+        name:"SHOU小流浪后援会",
+        latitude: 30.883000,
+        longitude: 121.896940,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/guangshang.png",
+        id:"18",
+        name:"广商流浪猫保护协会",
+        latitude: 23.303130,
+        longitude: 113.568130,
+        width: 50,
+        height: 50
+      },
+      {
         iconPath: "/pages/images/gongchengmaoyin.png",
         id:"17",
         name:"工程猫音",
@@ -11,7 +74,8 @@ Page({
         longitude: 126.682190,
         width: 50,
         height: 50
-      },{
+      },
+      {
         iconPath: "/pages/images/dongwu.png",
         id:"16",
         name:"东吴狸奴居",
