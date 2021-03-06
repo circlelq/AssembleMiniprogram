@@ -4,6 +4,24 @@ Page({
   data: {
     markers: [
       {
+        iconPath: "/pages/images/chongyou.png",
+        id:"26",
+        name:"重邮猫咪星球",
+        latitude: 29.532326,
+        longitude: 106.607960,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/misen.png",
+        id:"25",
+        name:"米森动物保护协会",
+        latitude: 23.202090,
+        longitude: 113.381100,
+        width: 50,
+        height: 50
+      },
+      {
         iconPath: "/pages/images/damihe.png",
         id:"24",
         name:"大咪和他的朋友们",

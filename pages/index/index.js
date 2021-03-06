@@ -6,6 +6,10 @@ data: {
     pinyin:"beihang",
   },
   {
+    name:"重邮猫咪星球",
+    pinyin:"chongyou",
+  },
+  {
     name:"大咪和他的朋友们",
     pinyin:"damihe",
   },
@@ -44,6 +48,10 @@ data: {
   {
     name:"玛珈山喵盟",
     pinyin:"majiashan",
+  },
+  {
+    name:"米森动物保护协会",
+    pinyin:"misen",
   },
   {
     name:"萌友小动物保护协会",
