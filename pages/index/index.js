@@ -2,6 +2,10 @@ Page({
 data: { 
  organ_list:[
   {
+    name:"北方工大猫协",
+    pinyin:"beifanggongda",
+  },
+  {
     name:"北航关爱动物协会",
     pinyin:"beihang",
   },
@@ -38,9 +42,17 @@ data: {
     pinyin:"jiangda",
   },
   {
+    name:"JNU流浪猫救助管理站",
+    pinyin:"jnu",
+  },
+  {
      name:"开仓放粮",
      pinyin:"kaicang",
   },
+  {
+    name:"科大猫咪",
+    pinyin:"ustc",
+ },
   {
     name:"清华大学学生小动物保护协会",
     pinyin:"qinghua",
@@ -58,12 +70,24 @@ data: {
     pinyin:"mengyou",
   },
   {
+    name:"南京艺术学院猫咪救助站",
+    pinyin:"nanjingyishu",
+  },
+  {
     name:"南审动物保护协会",
     pinyin:"nanshen",
   },
   {
+    name:"商大窝",
+    pinyin:"shangdawo",
+  },
+  {
     name:"SHOU小流浪后援会",
     pinyin:"SHOU",
+  },  
+  {
+    name:"天师猫协",
+    pinyin:"tianshimaoxie",
   },  
   {
     name:"UAP动物保护协会",

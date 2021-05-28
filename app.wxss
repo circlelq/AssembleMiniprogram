@@ -61,7 +61,7 @@
   margin-top: 14rpx;
   color:#353535;
   letter-spacing: 5rpx;
-  line-height: 50rpx;
+  line-height: 55rpx;
   text-align: justify;
 }
 

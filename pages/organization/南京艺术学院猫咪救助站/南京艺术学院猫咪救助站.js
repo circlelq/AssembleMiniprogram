@@ -2,19 +2,12 @@
 
 Page({
   data: {
-    name:"中农关协",
+    name:"南京艺术学院猫咪救助站",
     markers: [
     {
-      iconPath: "/pages/images/zhongnong.png",
-      latitude: 40.005006,
-      longitude: 116.357164,
-      width: 50,
-      height: 50
-    },
-    {
-      iconPath: "/pages/images/zhongnong.png",
-      latitude: 40.026808,
-      longitude: 116.282824,
+      iconPath: "/pages/images/nanjingyishu.png",
+      latitude: 32.062595,
+      longitude: 118.753377,
       width: 50,
       height: 50
     },
@@ -23,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/zhongnong.png',
+      iconPath: '/pages/images/nanjingyishu.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -92,7 +85,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '关爱动物ACA',//需要复制的内容
+      data: '南得艺猫',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
@@ -101,7 +94,7 @@ Page({
     },
   naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wx363c078bd9f48857',
+      appId: 'wx1b0d0706dc0b4474',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {

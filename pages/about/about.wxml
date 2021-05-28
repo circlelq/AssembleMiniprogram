@@ -1,6 +1,5 @@
 <!--index.wxml-->
 
-<view class= "title">高校小动物保护组织索引</view>
 
 
 <view class="head1">小程序介绍</view>
@@ -16,7 +15,7 @@
 </view>
 
 <view class="body">
-• 此小程序只是一个索引。
+• 此小程序只是一个索引，不为信息准确性负责。
 </view>
 
 <view class="body">
@@ -36,7 +35,7 @@
 </view>
 
 <view class="body">
-此<text bindtap="copy2" class="copy">小程序</text>所有代码开源，使用 MIT License 。
+此<text bindtap="copy2" class="copy">小程序</text>所有代码开源，使用 MIT License ，欢迎其它小程序或公众号引用此小程序。
 </view>
 
 <view class="body">
@@ -45,7 +44,7 @@
 
 <text> \n </text>
 
-<view class="staff">2021-03-06</view>
+<view class="staff">2021-05-23</view>
 
 <view class="staff">
 小程序开发：circle

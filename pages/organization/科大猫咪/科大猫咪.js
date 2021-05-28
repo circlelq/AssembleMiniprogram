@@ -2,19 +2,40 @@
 
 Page({
   data: {
-    name:"中农关协",
+    name:"科大猫咪",
     markers: [
+      {
+        iconPath: "/pages/images/ustc.png",
+        latitude: 31.843821,
+        longitude: 117.268886,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/ustc.png",
+        latitude: 31.839239,
+        longitude: 117.263567,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/ustc.png",
+        latitude: 31.821708,
+        longitude: 117.281467,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/ustc.png",
+        latitude: 31.838365,
+        longitude: 117.255554,
+        width: 50,
+        height: 50
+      },
     {
-      iconPath: "/pages/images/zhongnong.png",
-      latitude: 40.005006,
-      longitude: 116.357164,
-      width: 50,
-      height: 50
-    },
-    {
-      iconPath: "/pages/images/zhongnong.png",
-      latitude: 40.026808,
-      longitude: 116.282824,
+      iconPath: "/pages/images/ustc.png",
+      latitude: 31.837073,
+      longitude: 117.26956,
       width: 50,
       height: 50
     },
@@ -23,7 +44,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/zhongnong.png',
+      iconPath: '/pages/images/ustc.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -92,7 +113,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '关爱动物ACA',//需要复制的内容
+      data: '科大猫咪',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
@@ -101,7 +122,7 @@ Page({
     },
   naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wx363c078bd9f48857',
+      appId: 'wxf2701f15e3f6197e',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {

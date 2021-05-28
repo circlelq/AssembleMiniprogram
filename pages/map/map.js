@@ -4,6 +4,105 @@ Page({
   data: {
     markers: [
       {
+        iconPath: "/pages/images/shangdawo.png",
+        id:"37",
+        name:"商大窝",
+        latitude: 30.308837,
+        longitude: 120.388953,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/ustc.png",
+        id:"36",
+        name:"科大猫咪",
+        latitude: 31.843821,
+        longitude: 117.268886,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/ustc.png",
+        id:"35",
+        name:"科大猫咪",
+        latitude: 31.839239,
+        longitude: 117.263567,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/ustc.png",
+        id:"34",
+        name:"科大猫咪",
+        latitude: 31.821708,
+        longitude: 117.281467,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/ustc.png",
+        id:"33",
+        name:"科大猫咪",
+        latitude: 31.838365,
+        longitude: 117.255554,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/ustc.png",
+        id:"32",
+        name:"科大猫咪",
+        latitude: 31.837073,
+        longitude: 117.26956,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/beifanggongda.png",
+        id:"31",
+        name:"北方工大猫协",
+        latitude: 39.928274,
+        longitude: 116.207969,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/tianshimaoxie.png",
+        id:"30",
+        name:"天师猫协",
+        latitude: 39.063104,
+        longitude: 117.12575,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/nanjingyishu.png",
+        id:"29",
+        name:"南京艺术学院猫咪救助站",
+        latitude: 32.062595,
+        longitude: 118.753377,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/jnu.png",
+        id:"28",
+        name:"JNU流浪猫救助管理站",
+        latitude: 23.017606,
+        longitude: 113.415266,
+        width: 50,
+        height: 50
+      },
+      {
+        iconPath: "/pages/images/jnu.png",
+        id:"27",
+        name:"JNU流浪猫救助管理站",
+        latitude: 23.131479,
+        longitude: 113.347981,
+        width: 50,
+        height: 50
+      },
+      {
         iconPath: "/pages/images/chongyou.png",
         id:"26",
         name:"重邮猫咪星球",
@@ -287,5 +386,33 @@ Page({
   },
   controltap(e) {
     console.log(e.detail.controlId)
-  }
+  },
+    //转发功能
+    onShareAppMessage: function () {
+      let users = wx.getStorageSync('user');
+      if (res.from === 'button') { }
+      return {
+        path: 'pages/map/map',  // 路径，传递参数到指定页面。
+        success: function (res) { }
+      }
+    },
+  
+    // 转发到朋友圈
+    onShareTimeline: function (res) {
+      if (ops.from === 'button') {
+        // 来自页面内转发按钮
+        console.log(ops.target)
+      }
+      return {
+        path: 'pages/map/map',  // 路径，传递参数到指定页面。
+        success: function (res) {
+          // 转发成功
+          console.log("转发成功:" + JSON.stringify(res));
+        },
+        fail: function (res) {
+          // 转发失败
+          console.log("转发失败:" + JSON.stringify(res));
+        }
+      }
+    },
 })

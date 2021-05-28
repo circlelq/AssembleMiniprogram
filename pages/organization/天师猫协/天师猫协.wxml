@@ -1,0 +1,33 @@
+<!--index.wxml-->
+
+<view class="title">天师猫协</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/tianshimaoxie.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+</view>
+
+
+<view class="body">
+  在我们的校园里，住着很多漂亮可爱的喵星人，它们有的特别粘人，有的却很胆小。为了能让它们健康快乐的生活，也为了能让大家科学健康的吸猫，天师猫协就诞生啦。既可以改善校内流浪猫的生存条件，也为校园生态文明建设提供了新途径。我们的宗旨是希望通过猫协的日常工作与科普活动，协调好校园人猫关系，通过科学的手段管理好校内的流浪猫。
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="117.12575" latitude="39.063104" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

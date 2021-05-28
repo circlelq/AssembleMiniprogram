@@ -2,7 +2,7 @@
 
 Page({
   data: {
-    name:"开仓放粮",
+    name:"重邮猫咪星球",
     markers: [
     {
       iconPath: "/pages/images/chongyou.png",
