@@ -1,0 +1,31 @@
+<!--index.wxml-->
+
+<view class="title">辽宁大学爱猫群众自治组织</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/liaoda.png" style="width: 80%;">
+  </image>
+</view>
+
+<view class="itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 小程序 </view>
+  </view>
+</view>
+
+
+<view class="body">
+  我们是辽宁大学爱猫群众自治组织，由各个学院专业喜欢猫，爱护猫的同学组成，目前没有官方社团或公众号，以群聊形式存在，加群请 email 我们， <text bindtap="copyTBL" class="copy">AnsonZhang0114@163.com</text> 。
+</view>
+
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+  <map id="map" longitude="123.396653" latitude="41.886442" scale="11" controls="{{controls}}"
+    bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange"
+    show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>

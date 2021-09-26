@@ -85,7 +85,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'ECUPL开仓放粮',//需要复制的内容
+      data: 'GCC为爱发电',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        

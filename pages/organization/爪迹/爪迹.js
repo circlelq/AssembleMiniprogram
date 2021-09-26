@@ -2,21 +2,21 @@
 
 Page({
   data: {
-    name: "开仓放粮",
+    name:"爪迹",
     markers: [
-      {
-        iconPath: "/pages/images/kaicang.png",
-        latitude: 31.054762,
-        longitude: 121.196128,
-        width: 50,
-        height: 50
-      },
-    ],
-
+    {
+      iconPath: "/pages/images/zhuaji.png",
+      latitude: 30.681638,
+      longitude: 103.821121,
+      width: 50,
+      height: 50
+    },
+  ],
+    
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/kaicang.png',
+      iconPath: '/pages/images/zhuaji.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -43,7 +43,7 @@ Page({
     }
     return {
       title: this.data.name,
-      path: '/pages/index/index?pageId=' + this.data.name,
+      path: '/pages/index/index?pageId='+this.data.name,
       success: function (res) {
         // 转发成功
       },
@@ -60,7 +60,7 @@ Page({
     }
     return {
       title: this.data.name,
-      path: '/pages/index/index?pageId=' + this.data.name,
+      path: '/pages/index/index?pageId='+this.data.name,
       success: function (res) {
         // 转发成功
       },
@@ -73,36 +73,36 @@ Page({
     wx.stopPullDownRefresh()
   },
   copyTBL: function (e) {
-    var self = this;
-    wx.setClipboardData({
-      data: '北大猫协',//需要复制的内容
-      success: function (res) {
-        // self.setData({copyTip:true}),
-
-      }
-    })
+  var self = this;
+  wx.setClipboardData({
+    data: '北大猫协',//需要复制的内容
+    success: function (res) {
+      // self.setData({copyTip:true}),
+     
+    }
+  })
   },
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'ECUPL开仓放粮',//需要复制的内容
+      data: '爪迹',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
-
+       
       }
     })
-  },
-  naviToMini: function (e) {
+    },
+  naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wx007ba3d2623a903e',
+      appId: 'wxc364dbd70722e50d',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {
         // 打开成功
       }
     })
-  }
-
+   }
+  
 })
 
 

@@ -1,0 +1,53 @@
+<!--index.wxml-->
+
+<view class="title">爪迹</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/zhuaji.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+</view>
+
+
+<view class="body">
+  爪迹成立于21年4月，是西南财经大学柳林校区的一个为爱发电的“民间猫咪救助组织”~
+</view>
+
+<view class="body">
+  我们的任务是：
+1.科学救助西财柳林校区流浪猫；
+2.宣传领养代替购买，养宠终身负责的理念；
+3.传递正确救助流浪动物的知识。
+</view>
+
+<view class="body">
+  我们宣传的平台有：
+1.哔哩哔哩；  2.微信公众号；3小程序；4小红书；5微博；6抖音；7西瓜视频；8今日头条。
+</view>
+
+<view class="body">
+  截至21年9月，“爪迹”有关猫咪救助的战绩如下：绝育方面，鸽蛋官们为柳林校区范围内十几只猫咪进行了绝育；喂养方面，小爪设置了一些群护点，配备了食盆、水盆，并招募了一些小伙伴保证猫咪们的假期饮食~治病方面，老白的尿闭、壮壮的呕吐、肥宅的结石都得到了及时的救治；领养方面，研究生三花、黑黑、肥宅的崽崽、东门外的两只小橘猫、榕园小小白、灰老板、蓝宝石等猫咪都拥有了温暖的新家~除了救助外，我们的视频平台播放量已经达到30w，也有了一定的收益，资金已经用于制作相关周边，扩大影响力和自我造血。
+  </view>
+
+<view class="body">
+  西财猫咪管理员“爪迹”，冲鸭！
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="103.821121" latitude="30.681638" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

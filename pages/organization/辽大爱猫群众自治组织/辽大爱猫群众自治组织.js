@@ -2,21 +2,28 @@
 
 Page({
   data: {
-    name: "开仓放粮",
+    name:"辽大爱猫群众自治组织",
     markers: [
       {
-        iconPath: "/pages/images/kaicang.png",
-        latitude: 31.054762,
-        longitude: 121.196128,
+        iconPath: "/pages/images/liaoda.png",
+        latitude: 41.833903,
+        longitude: 123.405549,
         width: 50,
         height: 50
       },
-    ],
-
+      {
+        iconPath: "/pages/images/liaoda.png",
+        latitude: 41.926562,
+        longitude: 123.386932,
+        width: 50,
+        height: 50
+      },
+  ],
+    
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/kaicang.png',
+      iconPath: '/pages/images/liaoda.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -43,7 +50,7 @@ Page({
     }
     return {
       title: this.data.name,
-      path: '/pages/index/index?pageId=' + this.data.name,
+      path: '/pages/index/index?pageId='+this.data.name,
       success: function (res) {
         // 转发成功
       },
@@ -60,7 +67,7 @@ Page({
     }
     return {
       title: this.data.name,
-      path: '/pages/index/index?pageId=' + this.data.name,
+      path: '/pages/index/index?pageId='+this.data.name,
       success: function (res) {
         // 转发成功
       },
@@ -73,36 +80,36 @@ Page({
     wx.stopPullDownRefresh()
   },
   copyTBL: function (e) {
-    var self = this;
-    wx.setClipboardData({
-      data: '北大猫协',//需要复制的内容
-      success: function (res) {
-        // self.setData({copyTip:true}),
-
-      }
-    })
+  var self = this;
+  wx.setClipboardData({
+    data: 'AnsonZhang0114@163.com',//需要复制的内容
+    success: function (res) {
+      // self.setData({copyTip:true}),
+     
+    }
+  })
   },
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'ECUPL开仓放粮',//需要复制的内容
+      data: '辽宁大学爱猫群众自治组织',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
-
+       
       }
     })
-  },
-  naviToMini: function (e) {
+    },
+  naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wx007ba3d2623a903e',
+      appId: 'wxf15e7e00e564a6a7',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {
         // 打开成功
       }
     })
-  }
-
+   }
+  
 })
 
 

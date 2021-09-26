@@ -11,10 +11,10 @@
     <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
     <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
   </view>
-  <!-- <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
     <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
-  </view> -->
+  </view>
 </view>
 
 

@@ -94,7 +94,7 @@ Page({
     },
   naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wx2ac8e081f079b579',
+      appId: 'wxfaf8b8df37e02cff',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {
