@@ -1,0 +1,36 @@
+<!--index.wxml-->
+
+<view class="title">北医猫协</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/huihui.jpg" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+</view>
+
+
+<view class="body">
+  北京大学医学部流浪猫关爱协会（简称“北医猫协”）自2017年成立，为北京大学医学部团委指导下、由学生自发组织的非盈利性志愿组织。
+</view>
+<view class="body">
+北医猫协致力于科学改善校园内现有流浪猫生活，用绝育、送养等方法和平减少校园内流浪猫数量，协调人猫关系，营造良好的校园环境。猫协成立以来，除每日喂猫、伤病猫救助外，绝育和送养工作也一直在进行，目前北京大学医学部校园内已知流浪猫绝育率超过90%，也有较多猫咪已完成送养工作，顺利进家。
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="116.358886" latitude="39.984316" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

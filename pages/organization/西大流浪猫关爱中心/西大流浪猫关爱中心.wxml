@@ -1,0 +1,37 @@
+<!--index.wxml-->
+
+<view class="title">西大流浪猫关爱中心</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/xida.png" style="width: 80%;">
+  </image>
+</view>
+
+<view class="itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 小程序 </view>
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 公众号 </view>
+  </view>
+</view>
+
+
+<view class="body">
+  西大流浪猫关爱中心成立于2021年10月，由学生自发组织的非盈利性志愿组织。
+</view>
+<view class="body">
+  西大流浪猫关爱中心本着人与自然和谐相处的发展理念，坚持用有序，科学的喂养方式对西大的猫咪进行照顾。人们的弃养，遗失的猫猫对学校乃至城市的生态环境造成了一定的负面影响，为了营造好共同的家园，请大家不要在任何地方遗弃宠物，如果可以，有条件的群体可以用领养代替购买的方式照顾猫咪，流浪不是猫猫的归宿，西大也不是流浪猫的天堂。希望大家能参与到和谐校园的建造中来。
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+  <map id="map" longitude="106.423967" latitude="29.820542" scale="14" controls="{{controls}}"
+    bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange"
+    show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>

@@ -2,12 +2,12 @@
 
 Page({
   data: {
-    name:"商大窝",
+    name:"浙江财经大学校园流浪天使护卫队",
     markers: [
     {
-      iconPath: "/pages/images/shangdawo.png",
-      latitude: 30.308837,
-      longitude: 120.388953,
+      iconPath: "/pages/images/caimao.png",
+      latitude: 30.320838,
+      longitude: 120.395271,
       width: 50,
       height: 50
     },
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/shangdawo.png',
+      iconPath: '/pages/images/caimao.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -75,7 +75,7 @@ Page({
   copyTBL: function (e) {
   var self = this;
   wx.setClipboardData({
-    data: '北大猫协',//需要复制的内容
+    data: '浙财大学生动保',//需要复制的内容
     success: function (res) {
       // self.setData({copyTip:true}),
      
@@ -85,7 +85,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '商大窝',//需要复制的内容
+      data: '流浪天使护卫队',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
@@ -94,7 +94,7 @@ Page({
     },
   naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wxfe1e17ef1085ba24',
+      appId: 'wx4e77c42324ed3f79',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {

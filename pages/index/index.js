@@ -2,6 +2,10 @@ Page({
   data: {
     organ_list: [
       {
+        name: "北医猫协",
+        pinyin: "beiyi",
+      },
+      {
         name: "北方工大猫协",
         pinyin: "beifanggongda",
       },
@@ -70,6 +74,10 @@ Page({
         pinyin: "misen",
       },
       {
+        name: "喵呜社",
+        pinyin: "miaowushe",
+      },
+      {
         name: "萌友小动物保护协会",
         pinyin: "mengyou",
       },
@@ -106,8 +114,16 @@ Page({
         pinyin: "UAP",
       },
       {
+        name: "西大流浪猫关爱中心",
+        pinyin: "xida",
+      },
+      {
         name: "爪迹",
         pinyin: "zhuaji",
+      },
+      {
+        name: "浙江财经大学校园流浪天使护卫队",
+        pinyin: "caimao",
       },
       {
         name: "中农关协",

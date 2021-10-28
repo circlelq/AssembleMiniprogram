@@ -4,6 +4,42 @@ Page({
   data: {
     markers: [
       {
+        id: "48",
+        name: "喵呜社",
+        iconPath: "/pages/images/miaowushe.png",
+        latitude: 23.338348,
+        longitude: 113.384012,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "47",
+        name: "浙江财经大学校园流浪天使护卫队",
+        iconPath: "/pages/images/caimao.png",
+        latitude: 30.320838,
+        longitude: 120.395271,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "46",
+        name: "北医猫协",
+        iconPath: "/pages/images/beiyi.png",
+        latitude: 39.984316,
+        longitude: 116.358886,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "45",
+        name: "西大流浪猫关爱中心",
+        iconPath: "/pages/images/xida.png",
+        latitude: 29.820542,
+        longitude: 106.423967,
+        width: 50,
+        height: 50
+      },
+      {
         iconPath: "/pages/images/sit.png",
         latitude: 31.16697,
         longitude: 121.42244,

@@ -2,12 +2,12 @@
 
 Page({
   data: {
-    name:"商大窝",
+    name:"北医猫协",
     markers: [
     {
-      iconPath: "/pages/images/shangdawo.png",
-      latitude: 30.308837,
-      longitude: 120.388953,
+      iconPath: "/pages/images/beiyi.png",
+      latitude: 39.984316,
+      longitude: 116.358886,
       width: 50,
       height: 50
     },
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/shangdawo.png',
+      iconPath: '/pages/images/beiyi.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -85,7 +85,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '商大窝',//需要复制的内容
+      data: '北医猫协',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
@@ -94,7 +94,7 @@ Page({
     },
   naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wxfe1e17ef1085ba24',
+      appId: 'wx5e28f875cc1e1ba8',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {

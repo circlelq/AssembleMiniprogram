@@ -85,7 +85,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'ECUPL工程猫音',//需要复制的内容
+      data: '工程猫音',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
