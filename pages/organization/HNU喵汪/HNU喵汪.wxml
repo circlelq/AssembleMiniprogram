@@ -1,0 +1,49 @@
+<!--index.wxml-->
+
+<view class="title">HNU喵汪</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/HNU.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/weibo.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 微博 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/b.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n B 站 </view>  
+  </view>
+</view>
+
+
+<view class="body">
+  HNU喵汪创立于2021年10月21日，是湖南大学的一个保护和帮助校园流浪猫狗的自发非官方认证组织。日常的工作是救助流浪猫狗，尽全力守护他们的生命(救助不限于湖大校内，只要是我们能帮到的,我们都会尽力而为)。喵汪里的每一个成员都是用爱发电，无任何盈利性质，只有无私的付出和对小动物的无限的爱。
+</view>
+
+<view class="body">
+  在未来的日子里，HNU喵汪将会陪伴校园里的小动物一起健康长大（长胖），和所有关注喵汪和喜欢喵汪的爱宠人士一起成长。
+</view>
+
+<view class="body">
+  希望大家可以看到我们的进步与完善，多为我们提出宝贵的意见与建议！以后请多多关照!
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="112.94388" latitude="28.17951" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

@@ -4,6 +4,78 @@ Page({
   data: {
     markers: [
       {
+        id: "56",
+        name: "HNU喵汪",
+        iconPath: "/pages/images/HNU.png",
+        latitude: 28.17951,
+        longitude: 112.94388,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "55",
+        name: "六佰吸猫记",
+        iconPath: "/pages/images/liubaiximaoji.png",
+        latitude: 31.046378,
+        longitude: 121.217452,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "54",
+        name: "SJZU山竹团",
+        iconPath: "/pages/images/SJZU.png",
+        latitude: 41.743521,
+        longitude: 123.515981,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "53",
+        name: "西南交大流浪动物救助小分队",
+        iconPath: "/pages/images/xinanjiaoda.png",
+        latitude: 30.698742,
+        longitude: 104.053029,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "52",
+        name: "西南交大流浪动物救助小分队",
+        iconPath: "/pages/images/xinanjiaoda.png",
+        latitude: 30.764467,
+        longitude: 103.986327,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "51",
+        name: "这船猫",
+        iconPath: "/pages/images/zhechuanmao.png",
+        latitude: 30.320837,
+        longitude: 120.34333,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "50",
+        name: "神兽图鉴",
+        iconPath: "/pages/images/shenshou.png",
+        latitude: 39.061674,
+        longitude: 117.293794,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "49",
+        name: "NPUCAT",
+        iconPath: "/pages/images/NPUCAT.png",
+        latitude: 34.244415,
+        longitude: 108.915456,
+        width: 50,
+        height: 50
+      },
+      {
         id: "48",
         name: "喵呜社",
         iconPath: "/pages/images/miaowushe.png",

@@ -46,6 +46,10 @@ Page({
         pinyin: "guangshang",
       },
       {
+        name: "HNU喵汪",
+        pinyin: "HNU",
+      },
+      {
         name: "江大动管",
         pinyin: "jiangda",
       },
@@ -60,6 +64,10 @@ Page({
       {
         name: "科大猫咪",
         pinyin: "ustc",
+      },
+      {
+        name: "六佰吸猫记",
+        pinyin: "liubaiximaoji",
       },
       {
         name: "辽大爱猫群众自治组织",
@@ -86,6 +94,10 @@ Page({
         pinyin: "nanjingyishu",
       },
       {
+        name: "NPUCAT",
+        pinyin: "NPUCAT",
+      },
+      {
         name: "南审动物保护协会",
         pinyin: "nanshen",
       },
@@ -98,12 +110,20 @@ Page({
         pinyin: "shangdawo",
       },
       {
+        name: "SJZU山竹团",
+        pinyin: "SJZU",
+      },
+      {
         name: "SIT嗷呜流浪动物救助社",
         pinyin: "sit",
       },
       {
         name: "SHOU小流浪后援会",
         pinyin: "SHOU",
+      },
+      {
+        name: "神兽图鉴",
+        pinyin: "shenshou",
       },
       {
         name: "天师猫协",
@@ -118,12 +138,20 @@ Page({
         pinyin: "xida",
       },
       {
+        name: "西南交大流浪动物救助小分队",
+        pinyin: "xinanjiaoda",
+      },
+      {
         name: "爪迹",
         pinyin: "zhuaji",
       },
       {
         name: "浙江财经大学校园流浪天使护卫队",
         pinyin: "caimao",
+      },
+      {
+        name: "这船猫",
+        pinyin: "zhechuanmao",
       },
       {
         name: "中农关协",

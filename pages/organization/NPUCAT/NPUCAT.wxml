@@ -1,0 +1,37 @@
+<!--index.wxml-->
+
+<view class="title">NPUCAT</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/NPUCAT.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+</view>
+
+
+<view class="body">
+  NPUCAT来自西北工业大学，旨在让大家可以看到我们校园内的猫猫，有能力的也可以帮助他们，为他们筹钱做绝育和治病，为校园里的可爱流浪猫寻找负责的领养人。目前我们的小程序已录入大部分猫猫信息，供喜欢猫猫的朋友们来赏工大猫猫，也期待猫猫们能找到合适的领养人。
+</view>
+
+<view class="body">
+  <text user-select="true">联系方式：wenyunew@163.com（邮箱） allfakeHK（微信） 牛文宇</text>
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="108.915456" latitude="34.244415" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

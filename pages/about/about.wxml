@@ -31,7 +31,7 @@
 <view class="head1">联系我们</view>
 
 <view class="body">
-欢迎给 circle 的<text bindtap="copy1" class="copy">邮箱</text>发邮件。如果要加入此小程序，提供文字介绍信息和会徽图片即可。
+欢迎给 circle 的<text bindtap="copy1" class="copy">邮箱</text> yuanlq@pku.edu.cn 发邮件。如果要加入此小程序，提供文字介绍信息和会徽图片即可。
 </view>
 
 <view class="body">
@@ -44,11 +44,15 @@
 
 <text> \n </text>
 
-<view class="staff">2021-10-23</view>
 
-<view class="staff">
-小程序开发：circle
+<view  class = "logo">
+  <view bindtap="bindweb" style='flex-shrink:0; box-sizing:border-box; width:3rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/circle.png" ></image>
+
+  </view>
 </view>
+
+<view class="staff">© 2021-12-17 circle</view>
 
 
 <text> \n </text>
