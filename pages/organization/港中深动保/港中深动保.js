@@ -6,8 +6,8 @@ Page({
     markers: [
     {
       iconPath: "/pages/images/gangzhongshen.png",
-      latitude: 22.690888,
-      longitude: 114.203212,
+      latitude: 22.688365,
+      longitude: 114.212979,
       width: 50,
       height: 50
     },

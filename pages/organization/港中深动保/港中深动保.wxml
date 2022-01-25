@@ -25,7 +25,7 @@
 <text> \n </text>
 
 <view style="display:flex; justify-content:center; align-items:center;">
-<map id="map" longitude="114.203212" latitude="22.690888" scale="16" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+<map id="map" longitude="114.212979" latitude="22.688365" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
 </view>
 
 
