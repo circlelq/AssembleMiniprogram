@@ -46,6 +46,10 @@ Page({
         pinyin: "guangshang",
       },
       {
+        name: "港中深动保",
+        pinyin: "gangzhongshen",
+      },
+      {
         name: "HNU喵汪",
         pinyin: "HNU",
       },
@@ -140,6 +144,10 @@ Page({
       {
         name: "西南交大流浪动物救助小分队",
         pinyin: "xinanjiaoda",
+      },
+      {
+        name: "邮点猫饼",
+        pinyin: "youdianmaobing",
       },
       {
         name: "爪迹",

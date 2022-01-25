@@ -1,0 +1,37 @@
+<!--index.wxml-->
+
+<view class="title">邮点猫饼</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="/pages/images/youdianmaobing.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="naviToMini1" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+</view>
+
+
+<view class="body">
+  邮点猫饼作为自发成立的学校流浪猫群护组织，自五月份成立，已经发展到现在的两大校区联合组织。在这几个月里，饼饼致力于改善校猫的生存环境,缓解人猫的矛盾。为柚子们带来了校猫的精彩瞬间、文创纪念品，科普了干货知识。柚子们也许不知道我们的存在，也没有能见到我们，但是我们其实无处不在。我们会给校猫准备寒暑假的屯粮，饼饼会提醒同学们保持敬畏，会密切关注受伤的校猫，会在适合的时机执行TNR计划。群护并不是一个轻松的事业，我们也会有无能为力的时候。一个人的倾尽所有，不及所有人的举手之劳，新的一年让我们共同努力吧。
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="118.851313" latitude="32.101648" scale="11" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

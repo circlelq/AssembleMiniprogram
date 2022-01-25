@@ -4,6 +4,33 @@ Page({
   data: {
     markers: [
       {
+        id: "59",
+        name: "港中深动保",
+        iconPath: "/pages/images/gangzhongshen.png",
+        latitude: 22.690888,
+        longitude: 114.203212,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "58",
+        name: "邮点猫饼",
+        iconPath: "/pages/images/youdianmaobing.png",
+        latitude: 32.081129,
+        longitude: 118.771279,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "57",
+        name: "邮点猫饼",
+        iconPath: "/pages/images/youdianmaobing.png",
+        latitude: 32.113683,
+        longitude: 118.930829,
+        width: 50,
+        height: 50
+      },
+      {
         id: "56",
         name: "HNU喵汪",
         iconPath: "/pages/images/HNU.png",
