@@ -54,6 +54,10 @@ Page({
         pinyin: "HNU",
       },
       {
+        name: "湖师云养猫",
+        pinyin: "hushiyunyangmao",
+      },
+      {
         name: "江大动管",
         pinyin: "jiangda",
       },
@@ -108,6 +112,10 @@ Page({
       {
         name: "清华大学学生小动物保护协会",
         pinyin: "qinghua",
+      },
+      {
+        name: "深大动物保护平台",
+        pinyin: "shendadongwu",
       },
       {
         name: "商大窝",
