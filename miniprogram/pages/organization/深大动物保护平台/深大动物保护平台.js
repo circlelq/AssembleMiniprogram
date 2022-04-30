@@ -2,12 +2,26 @@
 
 Page({
   data: {
-    name:"工程猫音",
+    name:"深大动物保护平台",
     markers: [
     {
-      iconPath: "/pages/images/gongchengmaoyin.png",
-      latitude: 45.775790,
-      longitude: 126.682190,
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shendadongwu.png",
+      latitude: 22.530316,
+      longitude: 113.942214,
+      width: 50,
+      height: 50
+    },
+    {
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shendadongwu.png",
+      latitude: 22.532742,
+      longitude: 113.936696,
+      width: 50,
+      height: 50
+    },
+    {
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shendadongwu.png",
+      latitude: 22.596803,
+      longitude: 113.992756,
       width: 50,
       height: 50
     },
@@ -16,7 +30,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/gongchengmaoyin.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shendadongwu.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -85,7 +99,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '工程猫音',//需要复制的内容
+      data: '深大动物保护平台',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
        
@@ -94,7 +108,7 @@ Page({
     },
   naviToMini:function(e){
     wx.navigateToMiniProgram({
-      appId: 'wx79e5a0a57e47ba21',
+      appId: 'wxbde665c0f87802bf',
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {

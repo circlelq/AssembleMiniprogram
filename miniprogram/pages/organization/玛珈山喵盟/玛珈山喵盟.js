@@ -5,7 +5,7 @@ Page({
     name:"玛珈山喵盟",
     markers: [
     {
-      iconPath: "/pages/images/majiashan.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/majiashan.png",
       latitude: 37.532287,
       longitude: 122.058250,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/majiashan.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/majiashan.png',
       position: {
         left: 0,
         top: 300 - 50,

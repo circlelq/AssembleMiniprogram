@@ -2,25 +2,25 @@
 
 <view class="title">HNU喵汪</view>
 <view style="display:flex; justify-content:center; align-items:center;">
-  <image mode="widthFix" src="/pages/images/HNU.png" style="width: 80%;">
+  <image mode="widthFix" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/HNU.png" style="width: 80%;">
   </image>
 </view>
 
 <view  class = "itemname1">
   <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
-    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/mini.png"></image>
     <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
   </view>
   <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
-    <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png" ></image>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gongzhong.png" ></image>
     <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
   </view>
   <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
-    <image style="width:3rem;height:3rem;" src="/pages/images/weibo.png" ></image>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/weibo.png" ></image>
     <view style="text-align: center;  color:#353535;" > \n 微博 </view>  
   </view>
   <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
-    <image style="width:3rem;height:3rem;" src="/pages/images/b.png" ></image>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/b.png" ></image>
     <view style="text-align: center;  color:#353535;" > \n B 站 </view>  
   </view>
 </view>

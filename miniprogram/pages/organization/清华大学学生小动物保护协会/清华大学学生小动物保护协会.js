@@ -5,7 +5,7 @@ Page({
     name:"清华大学学生小动物保护协会",
     markers: [
     {
-      iconPath: "/pages/images/qinghua.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/qinghua.png",
       id: 0,
       latitude: 40.003661,
       longitude: 116.326510,
@@ -17,7 +17,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/qinghua.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/qinghua.png',
       position: {
         left: 0,
         top: 300 - 50,

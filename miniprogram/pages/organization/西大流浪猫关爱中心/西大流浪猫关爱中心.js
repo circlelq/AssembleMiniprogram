@@ -5,7 +5,7 @@ Page({
     name:"西大流浪猫关爱中心",
     markers: [
     {
-      iconPath: "/pages/images/xida.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/xida.png",
       latitude: 29.820542,
       longitude: 106.423967,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/xida.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/xida.png',
       position: {
         left: 0,
         top: 300 - 50,

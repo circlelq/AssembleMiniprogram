@@ -5,14 +5,14 @@ Page({
     name:"SIT嗷呜流浪动物救助社",
     markers: [
     {
-      iconPath: "/pages/images/sit.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/sit.png",
       latitude: 30.842733,
       longitude: 121.510572,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/sit.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/sit.png",
       latitude: 31.16697,
       longitude: 121.42244,
       width: 50,
@@ -23,7 +23,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/sit.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/sit.png',
       position: {
         left: 0,
         top: 300 - 50,

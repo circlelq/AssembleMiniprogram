@@ -5,7 +5,7 @@ Page({
     name:"北医猫协",
     markers: [
     {
-      iconPath: "/pages/images/beiyi.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beiyi.png",
       latitude: 39.984316,
       longitude: 116.358886,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/beiyi.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beiyi.png',
       position: {
         left: 0,
         top: 300 - 50,

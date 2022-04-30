@@ -4,14 +4,14 @@ Page({
   data: {
     name:"北航关爱动物协会",
     markers: [{
-      iconPath: "/pages/images/beihang.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beihang.png",
       latitude: 39.981795,
       longitude: 116.347127,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/beihang.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beihang.png",
       latitude: 40.153517,
       longitude: 116.270252,
       width: 50,
@@ -22,7 +22,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/beihang.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beihang.png',
       position: {
         left: 0,
         top: 300 - 50,

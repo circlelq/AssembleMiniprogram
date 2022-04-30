@@ -1,0 +1,41 @@
+<!--index.wxml-->
+
+<view class="title">万柳猫猫之家</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/wanliumeow.png" style="width: 80%;">
+  </image>
+</view>
+
+<view  class = "itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/mini.png"></image>
+    <view style="text-align: center;  color:#353535;" > \n 小程序 </view>  
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gongzhong.png" ></image>
+    <view style="text-align: center;  color:#353535;" > \n 公众号 </view>  
+  </view>
+</view>
+
+
+<view class="body">
+  万柳猫猫之家：由北京大学学生发起的猫咪群护志愿组织，负责照顾北京大学万柳学生公寓的流浪猫，主要进行喂食、绝育与送养等工作。
+</view>
+
+<view class="head1">联系方式</view>
+<view class="body">
+  手机号：<text bindtap="copyTBL" class="copy">15813323234</text>
+</view>
+<view class="body">
+  邮箱：<text bindtap="copyTBL1" class="copy">zhengliyin1007@163.com</text>
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+<map id="map" longitude="116.297433" latitude="39.961041" scale="16" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>
+

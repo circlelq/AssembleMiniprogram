@@ -22,6 +22,14 @@ Page({
         pinyin: "chongyou",
       },
       {
+        name: "南传猫协",
+        pinyin: "CUCN",
+      },
+      {
+        name: "大黄的山竹铺子",
+        pinyin: "dahuangdeshanzhupuzi",
+      },
+      {
         name: "大咪和他的朋友们",
         pinyin: "damihe",
       },
@@ -144,6 +152,10 @@ Page({
       {
         name: "UAP动物保护协会",
         pinyin: "UAP",
+      },
+      {
+        name: "万柳猫猫之家",
+        pinyin: "wanliumeow",
       },
       {
         name: "西大流浪猫关爱中心",

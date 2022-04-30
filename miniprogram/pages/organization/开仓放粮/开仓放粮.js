@@ -5,7 +5,7 @@ Page({
     name: "开仓放粮",
     markers: [
       {
-        iconPath: "/pages/images/kaicang.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/kaicang.png",
         latitude: 31.054762,
         longitude: 121.196128,
         width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/kaicang.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/kaicang.png',
       position: {
         left: 0,
         top: 300 - 50,

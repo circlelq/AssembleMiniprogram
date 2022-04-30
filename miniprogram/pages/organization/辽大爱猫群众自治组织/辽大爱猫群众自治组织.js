@@ -5,14 +5,14 @@ Page({
     name:"辽大爱猫群众自治组织",
     markers: [
       {
-        iconPath: "/pages/images/liaoda.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/liaoda.png",
         latitude: 41.833903,
         longitude: 123.405549,
         width: 50,
         height: 50
       },
       {
-        iconPath: "/pages/images/liaoda.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/liaoda.png",
         latitude: 41.926562,
         longitude: 123.386932,
         width: 50,
@@ -23,7 +23,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/liaoda.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/liaoda.png',
       position: {
         left: 0,
         top: 300 - 50,

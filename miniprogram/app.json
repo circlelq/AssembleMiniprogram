@@ -4,6 +4,9 @@
     "pages/about/about",
     "pages/logs/logs",
     "pages/map/map",
+    "pages/organization/万柳猫猫之家/万柳猫猫之家",
+    "pages/organization/大黄的山竹铺子/大黄的山竹铺子",
+    "pages/organization/南传猫协/南传猫协",
     "pages/organization/HNU喵汪/HNU喵汪",
     "pages/organization/JNU流浪猫救助管理站/JNU流浪猫救助管理站",
     "pages/organization/NPUCAT/NPUCAT",
@@ -46,7 +49,7 @@
     "pages/organization/辽大爱猫群众自治组织/辽大爱猫群众自治组织",
     "pages/organization/这船猫/这船猫",
     "pages/organization/邮点猫饼/邮点猫饼",
-    "pages/organization/重邮猫咪星/重邮猫咪星"
+    "pages/organization/重邮猫咪星球/重邮猫咪星球"
     
   ],
   "window": {

@@ -5,7 +5,7 @@ Page({
     name:"HNU喵汪",
     markers: [
     {
-      iconPath: "/pages/images/HNU.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/HNU.png",
       latitude: 28.17951,
       longitude: 112.94388,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/HNU.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/HNU.png',
       position: {
         left: 0,
         top: 300 - 50,

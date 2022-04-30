@@ -5,35 +5,35 @@ Page({
     name:"笃行志愿服务队",
     markers: [
     {
-      iconPath: "/pages/images/duxing.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
       latitude: 23.065118,
       longitude: 113.390597,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/duxing.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
       latitude: 23.096717,
       longitude: 113.298399,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/duxing.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
       latitude: 23.200489,
       longitude: 113.292419,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/duxing.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
       latitude: 23.063969,
       longitude: 113.397682,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/duxing.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
       latitude: 23.158311,
       longitude: 113.358473,
       width: 50,
@@ -43,7 +43,7 @@ Page({
     
 
     controls: [{
-      iconPath: '/pages/images/duxing.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png',
       position: {
         left: 0,
         top: 300 - 50,

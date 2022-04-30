@@ -5,35 +5,35 @@ Page({
     name:"科大猫咪",
     markers: [
       {
-        iconPath: "/pages/images/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         latitude: 31.843821,
         longitude: 117.268886,
         width: 50,
         height: 50
       },
       {
-        iconPath: "/pages/images/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         latitude: 31.839239,
         longitude: 117.263567,
         width: 50,
         height: 50
       },
       {
-        iconPath: "/pages/images/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         latitude: 31.821708,
         longitude: 117.281467,
         width: 50,
         height: 50
       },
       {
-        iconPath: "/pages/images/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         latitude: 31.838365,
         longitude: 117.255554,
         width: 50,
         height: 50
       },
     {
-      iconPath: "/pages/images/ustc.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
       latitude: 31.837073,
       longitude: 117.26956,
       width: 50,
@@ -44,7 +44,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/ustc.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png',
       position: {
         left: 0,
         top: 300 - 50,

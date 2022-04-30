@@ -5,7 +5,7 @@ Page({
     name:"SHOU小流浪后援会",
     markers: [
     {
-      iconPath: "/pages/images/SHOU.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/SHOU.png",
       latitude: 30.883000,
       longitude: 121.896940,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/SHOU.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/SHOU.png',
       position: {
         left: 0,
         top: 300 - 50,

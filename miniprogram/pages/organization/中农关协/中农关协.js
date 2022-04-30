@@ -5,14 +5,14 @@ Page({
     name:"中农关协",
     markers: [
     {
-      iconPath: "/pages/images/zhongnong.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhongnong.png",
       latitude: 40.005006,
       longitude: 116.357164,
       width: 50,
       height: 50
     },
     {
-      iconPath: "/pages/images/zhongnong.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhongnong.png",
       latitude: 40.026808,
       longitude: 116.282824,
       width: 50,
@@ -23,7 +23,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/zhongnong.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhongnong.png',
       position: {
         left: 0,
         top: 300 - 50,

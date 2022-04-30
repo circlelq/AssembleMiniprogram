@@ -5,14 +5,14 @@ Page({
     name:"邮点猫饼",
     markers: [
       {
-        iconPath: "/pages/images/youdianmaobing.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/youdianmaobing.png",
         latitude: 32.081129,
         longitude: 118.771279,
         width: 50,
         height: 50
       },
     {
-      iconPath: "/pages/images/youdianmaobing.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/youdianmaobing.png",
       latitude: 32.113683,
       longitude: 118.930829,
       width: 50,
@@ -23,7 +23,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/youdianmaobing.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/youdianmaobing.png',
       position: {
         left: 0,
         top: 300 - 50,

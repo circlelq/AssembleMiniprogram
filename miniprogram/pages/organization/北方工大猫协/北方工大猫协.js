@@ -5,7 +5,7 @@ Page({
     name:"北方工大猫协",
     markers: [
     {
-      iconPath: "/pages/images/beifanggongda.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beifanggongda.png",
       latitude: 39.928274,
       longitude: 116.207969,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/beifanggongda.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beifanggongda.png',
       position: {
         left: 0,
         top: 300 - 50,

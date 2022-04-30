@@ -5,7 +5,7 @@ Page({
     name:"重邮猫咪星球",
     markers: [
     {
-      iconPath: "/pages/images/chongyou.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/chongyou.png",
       latitude: 29.532326,
       longitude: 106.607960,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/chongyou.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/chongyou.png',
       position: {
         left: 0,
         top: 300 - 50,

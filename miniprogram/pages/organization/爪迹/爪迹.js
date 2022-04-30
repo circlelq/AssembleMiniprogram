@@ -5,7 +5,7 @@ Page({
     name:"爪迹",
     markers: [
     {
-      iconPath: "/pages/images/zhuaji.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhuaji.png",
       latitude: 30.681638,
       longitude: 103.821121,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/zhuaji.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhuaji.png',
       position: {
         left: 0,
         top: 300 - 50,

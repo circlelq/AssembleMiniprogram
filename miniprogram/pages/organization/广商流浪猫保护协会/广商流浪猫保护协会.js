@@ -5,7 +5,7 @@ Page({
     name:"广商流浪猫保护协会",
     markers: [
     {
-      iconPath: "/pages/images/guangshang.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/guangshang.png",
       latitude: 23.303130,
       longitude: 113.568130,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/guangshang.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/guangshang.png',
       position: {
         left: 0,
         top: 300 - 50,

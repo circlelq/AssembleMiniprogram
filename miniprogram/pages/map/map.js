@@ -4,9 +4,81 @@ Page({
   data: {
     markers: [
       {
+        id: "67",
+        name: "万柳猫猫之家",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/wanliumeow.png",
+        latitude: 39.961041,
+        longitude: 116.297433,
+        width: 50,
+        height: 50
+      },
+      { // 石牌校区
+        id: "66",
+        name: "大黄的山竹铺子",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/dahuangdeshanzhupuzi.png",
+        latitude: 23.13935,
+        longitude: 113.352078,
+        width: 50,
+        height: 50
+      },
+      {// {大学城校区
+        id: "65",
+        name: "大黄的山竹铺子",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/dahuangdeshanzhupuzi.png",
+        latitude: 23.052559,
+        longitude: 113.380095,
+        width: 50,
+        height: 50
+      },
+      {// {南海校区
+        id: "64",
+        name: "大黄的山竹铺子",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/dahuangdeshanzhupuzi.png",
+        latitude: 23.146853,
+        longitude: 113.028152,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "63",
+        name: "深大动物保护平台",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shendadongwu.png",
+        latitude: 22.530316,
+        longitude: 113.942214,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "62",
+        name: "深大动物保护平台",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shendadongwu.png",
+        latitude: 22.532742,
+        longitude: 113.936696,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "61",
+        name: "深大动物保护平台",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shendadongwu.png",
+        latitude: 22.596803,
+        longitude: 113.992756,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "60",
+        name: "南传猫协",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/CUCN.png",
+        latitude: 31.884658,
+        longitude: 118.888672,
+        width: 50,
+        height: 50
+      },
+      {
         id: "59",
         name: "港中深动保",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/gangzhongshen.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gangzhongshen.png",
         latitude: 22.688365,
         longitude: 114.212979,
         width: 50,
@@ -15,7 +87,7 @@ Page({
       {
         id: "58",
         name: "邮点猫饼",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/youdianmaobing.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/youdianmaobing.png",
         latitude: 32.081129,
         longitude: 118.771279,
         width: 50,
@@ -24,7 +96,7 @@ Page({
       {
         id: "57",
         name: "邮点猫饼",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/youdianmaobing.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/youdianmaobing.png",
         latitude: 32.113683,
         longitude: 118.930829,
         width: 50,
@@ -33,7 +105,7 @@ Page({
       {
         id: "56",
         name: "HNU喵汪",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/HNU.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/HNU.png",
         latitude: 28.17951,
         longitude: 112.94388,
         width: 50,
@@ -42,7 +114,7 @@ Page({
       {
         id: "55",
         name: "六佰吸猫记",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/liubaiximaoji.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/liubaiximaoji.png",
         latitude: 31.046378,
         longitude: 121.217452,
         width: 50,
@@ -51,7 +123,7 @@ Page({
       {
         id: "54",
         name: "SJZU山竹团",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/SJZU.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/SJZU.png",
         latitude: 41.743521,
         longitude: 123.515981,
         width: 50,
@@ -60,7 +132,7 @@ Page({
       {
         id: "53",
         name: "西南交大流浪动物救助小分队",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/xinanjiaoda.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/xinanjiaoda.png",
         latitude: 30.698742,
         longitude: 104.053029,
         width: 50,
@@ -69,7 +141,7 @@ Page({
       {
         id: "52",
         name: "西南交大流浪动物救助小分队",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/xinanjiaoda.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/xinanjiaoda.png",
         latitude: 30.764467,
         longitude: 103.986327,
         width: 50,
@@ -78,7 +150,7 @@ Page({
       {
         id: "51",
         name: "这船猫",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/zhechuanmao.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhechuanmao.png",
         latitude: 30.320837,
         longitude: 120.34333,
         width: 50,
@@ -87,7 +159,7 @@ Page({
       {
         id: "50",
         name: "神兽图鉴",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/shenshou.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shenshou.png",
         latitude: 39.061674,
         longitude: 117.293794,
         width: 50,
@@ -96,7 +168,7 @@ Page({
       {
         id: "49",
         name: "NPUCAT",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/NPUCAT.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/NPUCAT.png",
         latitude: 34.244415,
         longitude: 108.915456,
         width: 50,
@@ -105,7 +177,7 @@ Page({
       {
         id: "48",
         name: "喵呜社",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/miaowushe.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/miaowushe.png",
         latitude: 23.338348,
         longitude: 113.384012,
         width: 50,
@@ -114,7 +186,7 @@ Page({
       {
         id: "47",
         name: "浙江财经大学校园流浪天使护卫队",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/caimao.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/caimao.png",
         latitude: 30.320838,
         longitude: 120.395271,
         width: 50,
@@ -132,14 +204,14 @@ Page({
       {
         id: "45",
         name: "西大流浪猫关爱中心",
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/xida.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/xida.png",
         latitude: 29.820542,
         longitude: 106.423967,
         width: 50,
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/sit.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/sit.png",
         latitude: 31.16697,
         longitude: 121.42244,
         id: "44",
@@ -148,7 +220,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/sit.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/sit.png",
         latitude: 30.842733,
         longitude: 121.510572,
         id: "43",
@@ -157,7 +229,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/zhuaji.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhuaji.png",
         latitude: 30.681638,
         longitude: 103.821121,
         id: "42",
@@ -166,7 +238,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/liaoda.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/liaoda.png",
         id: "41",
         name: "辽大爱猫群众自治组织",
         latitude: 41.833903,
@@ -175,7 +247,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/liaoda.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/liaoda.png",
         id: "40",
         name: "辽大爱猫群众自治组织",
         latitude: 41.926562,
@@ -184,7 +256,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/cufeimiao.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/cufeimiao.png",
         id: "39",
         name: "粗肥喵",
         latitude: 39.959494,
@@ -193,7 +265,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/cufeimiao.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/cufeimiao.png",
         id: "38",
         name: "粗肥喵",
         latitude: 40.17157,
@@ -202,7 +274,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/shangdawo.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/shangdawo.png",
         id: "37",
         name: "商大窝",
         latitude: 30.308837,
@@ -211,7 +283,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         id: "36",
         name: "科大猫咪",
         latitude: 31.843821,
@@ -220,7 +292,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         id: "35",
         name: "科大猫咪",
         latitude: 31.839239,
@@ -229,7 +301,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         id: "34",
         name: "科大猫咪",
         latitude: 31.821708,
@@ -238,7 +310,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         id: "33",
         name: "科大猫咪",
         latitude: 31.838365,
@@ -247,7 +319,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/ustc.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/ustc.png",
         id: "32",
         name: "科大猫咪",
         latitude: 31.837073,
@@ -256,7 +328,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/beifanggongda.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beifanggongda.png",
         id: "31",
         name: "北方工大猫协",
         latitude: 39.928274,
@@ -265,7 +337,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/tianshimaoxie.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/tianshimaoxie.png",
         id: "30",
         name: "天师猫协",
         latitude: 39.063104,
@@ -274,7 +346,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/nanjingyishu.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/nanjingyishu.png",
         id: "29",
         name: "南京艺术学院猫咪救助站",
         latitude: 32.062595,
@@ -283,7 +355,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/jnu.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/jnu.png",
         id: "28",
         name: "JNU流浪猫救助管理站",
         latitude: 23.017606,
@@ -292,7 +364,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/jnu.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/jnu.png",
         id: "27",
         name: "JNU流浪猫救助管理站",
         latitude: 23.131479,
@@ -301,7 +373,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/chongyou.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/chongyou.png",
         id: "26",
         name: "重邮猫咪星球",
         latitude: 29.532326,
@@ -310,7 +382,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/misen.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/misen.png",
         id: "25",
         name: "米森动物保护协会",
         latitude: 23.202090,
@@ -319,7 +391,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/damihe.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/damihe.png",
         id: "24",
         name: "大咪和他的朋友们",
         latitude: 43.823700,
@@ -328,7 +400,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/damihe.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/damihe.png",
         id: "23",
         name: "大咪和他的朋友们",
         latitude: 43.910283,
@@ -337,7 +409,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/dongwu.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/dongwu.png",
         id: "22",
         name: "东吴狸奴居",
         latitude: 31.305545,
@@ -346,7 +418,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/dongwu.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/dongwu.png",
         id: "21",
         name: "东吴狸奴居",
         latitude: 31.385012,
@@ -355,7 +427,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/UAP.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/UAP.png",
         id: "20",
         name: "UAP动物保护协会",
         latitude: 31.9029922,
@@ -364,7 +436,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/SHOU.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/SHOU.png",
         id: "19",
         name: "SHOU小流浪后援会",
         latitude: 30.883000,
@@ -373,7 +445,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/guangshang.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/guangshang.png",
         id: "18",
         name: "广商流浪猫保护协会",
         latitude: 23.303130,
@@ -382,7 +454,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/gongchengmaoyin.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gongchengmaoyin.png",
         id: "17",
         name: "工程猫音",
         latitude: 45.775790,
@@ -391,7 +463,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/dongwu.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/dongwu.png",
         id: "16",
         name: "东吴狸奴居",
         latitude: 31.268074,
@@ -400,7 +472,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/nanshen.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/nanshen.png",
         id: "15",
         name: "南审动物保护协会",
         latitude: 32.062851,
@@ -409,7 +481,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/majiashan.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/majiashan.png",
         id: "14",
         name: "玛珈山喵盟",
         latitude: 37.532287,
@@ -418,7 +490,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/mengyou.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/mengyou.png",
         id: "13",
         name: "萌友小动物保护协会",
         latitude: 31.031482,
@@ -427,7 +499,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/guangdongyi.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/guangdongyi.png",
         id: "12",
         name: "广东医猫猫",
         latitude: 22.923274,
@@ -436,7 +508,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/zhongnong.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhongnong.png",
         id: "11",
         name: "中农关协",
         latitude: 40.005006,
@@ -445,7 +517,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/zhongnong.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhongnong.png",
         id: "10",
         name: "中农关协",
         latitude: 40.026808,
@@ -454,7 +526,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/duxing.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
         id: "9",
         name: "笃行志愿服务队",
         latitude: 23.065118,
@@ -463,7 +535,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/duxing.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
         id: "8",
         name: "笃行志愿服务队",
         latitude: 23.096717,
@@ -472,7 +544,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/duxing.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
         id: "7",
         name: "笃行志愿服务队",
         latitude: 23.200489,
@@ -481,7 +553,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/duxing.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
         id: "6",
         name: "笃行志愿服务队",
         latitude: 23.063969,
@@ -490,7 +562,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/duxing.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/duxing.png",
         id: "5",
         name: "笃行志愿服务队",
         latitude: 23.158311,
@@ -499,7 +571,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/jiangda.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/jiangda.png",
         id: "4",
         name: "江大动管",
         latitude: 32.199320,
@@ -508,7 +580,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/qinghua.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/qinghua.png",
         id: "3",
         name: "清华大学学生小动物保护协会",
         latitude: 40.003661,
@@ -517,7 +589,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/beihang.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beihang.png",
         id: "2",
         name: "北航关爱动物协会",
         latitude: 39.981795,
@@ -526,7 +598,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/beihang.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beihang.png",
         id: "1",
         name: "北航关爱动物协会",
         latitude: 40.153517,
@@ -535,7 +607,7 @@ Page({
         height: 50
       },
       {
-        iconPath: "cloud://circle-test-zdk23.6369-circle-test-zdk23-1259206269/会徽/kaicang.png",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/kaicang.png",
         id: "0",
         name: "开仓放粮",
         latitude: 31.054762,

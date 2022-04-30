@@ -5,7 +5,7 @@ Page({
     name:"NPUCAT",
     markers: [
     {
-      iconPath: "/pages/images/NPUCAT.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/NPUCAT.png",
       latitude: 34.244415,
       longitude: 108.915456,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/NPUCAT.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/NPUCAT.png',
       position: {
         left: 0,
         top: 300 - 50,

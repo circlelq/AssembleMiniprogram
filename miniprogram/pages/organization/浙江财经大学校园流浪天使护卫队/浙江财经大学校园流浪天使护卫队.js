@@ -5,7 +5,7 @@ Page({
     name:"浙江财经大学校园流浪天使护卫队",
     markers: [
     {
-      iconPath: "/pages/images/caimao.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/caimao.png",
       latitude: 30.320838,
       longitude: 120.395271,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/caimao.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/caimao.png',
       position: {
         left: 0,
         top: 300 - 50,

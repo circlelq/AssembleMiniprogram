@@ -5,7 +5,7 @@ Page({
     name:"天师猫协",
     markers: [
     {
-      iconPath: "/pages/images/tianshimaoxie.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/tianshimaoxie.png",
       latitude: 39.063104,
       longitude: 117.12575,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/tianshimaoxie.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/tianshimaoxie.png',
       position: {
         left: 0,
         top: 300 - 50,

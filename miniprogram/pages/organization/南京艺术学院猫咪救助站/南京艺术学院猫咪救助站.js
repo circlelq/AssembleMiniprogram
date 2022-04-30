@@ -5,7 +5,7 @@ Page({
     name:"南京艺术学院猫咪救助站",
     markers: [
     {
-      iconPath: "/pages/images/nanjingyishu.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/nanjingyishu.png",
       latitude: 32.062595,
       longitude: 118.753377,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/nanjingyishu.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/nanjingyishu.png',
       position: {
         left: 0,
         top: 300 - 50,

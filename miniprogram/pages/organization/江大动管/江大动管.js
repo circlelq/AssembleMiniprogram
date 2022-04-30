@@ -5,7 +5,7 @@ Page({
     name:"江大动管",
     markers: [
     {
-      iconPath: "/pages/images/jiangda.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/jiangda.png",
       latitude: 32.199320,
       longitude: 119.514280,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/jiangda.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/jiangda.png',
       position: {
         left: 0,
         top: 300 - 50,

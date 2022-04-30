@@ -5,7 +5,7 @@ Page({
     name:"这船猫",
     markers: [
     {
-      iconPath: "/pages/images/zhechuanmao.png",
+      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhechuanmao.png",
       latitude: 30.320837,
       longitude: 120.34333,
       width: 50,
@@ -16,7 +16,7 @@ Page({
 
     controls: [{
       id: 1,
-      iconPath: '/pages/images/zhechuanmao.png',
+      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/zhechuanmao.png',
       position: {
         left: 0,
         top: 300 - 50,
