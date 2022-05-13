@@ -4,6 +4,33 @@ Page({
   data: {
     markers: [
       {
+        id: "70",
+        name: "杏林猫事",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/xinlinmaoshi.png",
+        latitude: 23.058361,
+        longitude: 113.404595,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "69",
+        name: "杏林猫事",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/xinlinmaoshi.png",
+        latitude: 23.156026,
+        longitude: 113.267124,
+        width: 50,
+        height: 50
+      },
+      {
+        id: "68",
+        name: "HUT猫协",
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/HUTmaoxie.png",
+        latitude: 27.817843,
+        longitude: 113.10669,
+        width: 50,
+        height: 50
+      },
+      {
         id: "67",
         name: "万柳猫猫之家",
         iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/wanliumeow.png",

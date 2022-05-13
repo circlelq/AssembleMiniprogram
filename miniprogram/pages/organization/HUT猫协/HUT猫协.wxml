@@ -1,0 +1,36 @@
+<!--index.wxml-->
+
+<view class="title">HUT猫协</view>
+<view style="display:flex; justify-content:center; align-items:center;">
+  <image mode="widthFix" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/HUTmaoxie.png" style="width: 80%;">
+  </image>
+</view>
+
+<view class="itemname1">
+  <view bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/mini.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 小程序 </view>
+  </view>
+  <view bindtap="copy2" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gongzhong.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 公众号 </view>
+  </view>
+</view>
+
+
+<view class="body">
+  HUT猫协是由湖南工业大学学生自发成立的学生社团组织（非营利性志愿组织），致力于校园流浪猫的保护工作，针对流浪猫进行TNR、救助送养等活动，科学控制校园流浪猫的数量，改善流浪猫的生活，营造人猫和谐共处的校园环境。
+</view>
+<view class="body">
+  校园并不是流浪猫最好的归宿，他们短暂的一生不应该都在风餐露宿中度过，我们由衷地希望每一只小流浪都能有一个家，得到应有的爱与温暖。守护它们健康快乐成长，不用忍受饥饿和病痛是我们存在的意义。
+  欢迎大家关注并监督我们的工作，为社团的进步和完善提出宝贵的建议，也呼吁更多的小伙伴加入我们，共同守护这些可爱的生灵。
+</view>
+
+<text> \n </text>
+
+<view style="display:flex; justify-content:center; align-items:center;">
+  <map id="map" longitude="113.10669" latitude="27.817843" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+</view>
+
+
+<text> \n </text>

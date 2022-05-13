@@ -62,6 +62,10 @@ Page({
         pinyin: "HNU",
       },
       {
+        name: "HUT猫协",
+        pinyin: "HUTmaoxie",
+      },
+      {
         name: "湖师云养猫",
         pinyin: "hushiyunyangmao",
       },
@@ -160,6 +164,10 @@ Page({
       {
         name: "西大流浪猫关爱中心",
         pinyin: "xida",
+      },
+      {
+        name: "杏林猫事",
+        pinyin: "xinlinmaoshi",
       },
       {
         name: "西南交大流浪动物救助小分队",
