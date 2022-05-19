@@ -1,4 +1,4 @@
-<view class="title">工程猫音</view>
+<view class="title">工程猫音{{organization_id}}</view>
 <view style="display:flex; justify-content:center; align-items:center;">
   <image mode="widthFix" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gongchengmaoyin.png" style="width: 80%;">
   </image>

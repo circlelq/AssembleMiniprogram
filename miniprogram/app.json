@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/about/about",
+    "pages/organizationDetail/organizationDetail",
     "pages/logs/logs",
     "pages/map/map",
     "pages/organization/杏林猫事/杏林猫事",

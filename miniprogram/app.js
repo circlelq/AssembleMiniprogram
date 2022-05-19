@@ -30,6 +30,19 @@ App({
         content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试。'
       })
     }
+
+    if (!wx.cloud) {
+      console.error('请使用 2.2.3 或以上的基础库以使用云能力')
+    } else {
+      try {
+        wx.cloud.init({
+          traceUser: true,
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -45,4 +58,4 @@ wx.showShareMenu({
   menus: ['shareAppMessage', 'shareTimeline'],
 })
 
-wx.setInnerAudioOption({ obeyMuteSwitch: false });
+// wx.setInnerAudioOption({ obeyMuteSwitch: false });

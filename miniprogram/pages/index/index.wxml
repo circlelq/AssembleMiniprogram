@@ -2,8 +2,8 @@
 <!-- <text> \n </text> -->
 
 <view class="circle">
-<image  class = 'avator ' src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/circle.png" mode='aspectFill' ></image>
-<input class = 'search' placeholder="请输入组织名称" bindconfirm="bindconfirmT" placeholder-class="placeholder" />
+  <image class='avator ' src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/circle.png" mode='aspectFill'></image>
+  <input class='search' placeholder="请输入组织名称" bindconfirm="bindconfirmT" placeholder-class="placeholder" />
 </view>
 
 <!-- <text> \n </text>  -->
@@ -11,12 +11,21 @@
   <view class="divLineLong"></view>
 </view>
 
+<block wx:for="{{organization}}">
+  <view bindtap="clickOrganization" data-organization_id='{{item._id}}' class="catitem">
+    <image class='avator ' src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/{{item.photoName}}.png" mode='aspectFill'></image>
+    <view class="cat-name">{{item.name}}</view>
+  </view>
+  <view class="divLine"></view>
+</block>
+
+
 <block wx:for="{{organ_list}}">
-  <navigator url="/pages/organization/{{item.name}}/{{item.name}}" >
+  <navigator url="/pages/organization/{{item.name}}/{{item.name}}">
     <view class="catitem">
-      <image  class = 'avator ' src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/{{item.pinyin}}.png" mode='aspectFill' ></image>
-      <view class= "cat-name">{{item.name}}</view> 
+      <image class='avator ' src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/{{item.pinyin}}.png" mode='aspectFill'></image>
+      <view class="cat-name">{{item.name}}</view>
     </view>
     <view class="divLine"></view>
-  </navigator>  
+  </navigator>
 </block>

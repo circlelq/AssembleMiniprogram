@@ -1,8 +1,11 @@
 //index.js
 
+var organization_id="1";
+
 Page({
   data: {
     name:"工程猫音",
+    organization_id:"1",
     markers: [
     {
       iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gongchengmaoyin.png",
@@ -26,6 +29,46 @@ Page({
       clickable: true
     }]
   },
+
+    /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    organization_id = options.organization_id;
+    const that = this;
+    console.log("加载detail页码");
+    console.log(organization_id);
+
+    that.loadOrganization();
+
+
+  },
+
+  loadOrganization() {
+    const db = wx.cloud.database();
+    db.collection('organization').doc(organization_id).get().then(res => {
+      console.log(res);
+      res.data.photo = [];
+      // res.data.characteristics_string = [(res.data.colour || '') + '猫'].conorgan(res.data.characteristics || []).join('，');
+      res.data.characteristics_string = (res.data.colour || '') + '猫';
+      // res.data.nickname = (res.data.nickname || []).join('、');
+
+      this.setData({
+        organization: res.data
+      }, ()=> {
+        this.reloadPhotos();
+        this.loadCommentCount();
+        var query = wx.createSelectorQuery();
+        query.select('#info-box').boundingClientRect();
+        query.exec((res) => {
+          console.log(res[0]);
+          infoHeight = res[0].height;
+        })
+      });
+    });
+  },
+
+
   regionchange(e) {
     console.log(e.type)
   },

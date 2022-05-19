@@ -1,5 +1,9 @@
 Page({
   data: {
+    organs: [
+
+    ],
+
     organ_list: [
       {
         name: "北医猫协",
@@ -209,15 +213,49 @@ Page({
     wx.stopPullDownRefresh()
   },
 
-  //转发跳转页面设置
+  /**
+   * 生命周期函数--监听页面加载
+   */
   onLoad: function (options) {
     if (options.pageId) {
       wx.navigateTo({
         url: '/pages/organization/' + options.pageId + '/' + options.pageId,
       })
     }
+    const that = this;
+    const db = wx.cloud.database();
+    // console.log(db)
+    const organization = db.collection('organization');
+
+    db.collection('organization').get({
+      // const new_organizations = organizations.concat(res.data);
+      success: function (res) {
+        // res.data 包含该记录的数据
+        console.log('test')
+        that.setData({
+          organization: res.data,
+          // loading: false,
+        });
+      },
+      fail(error) {
+        reject(error)
+      },
+
+    });
+
   },
 
+  // 点击组织
+  clickOrganization(e, isOrganizationId = false) {
+    const organization_id = isOrganizationId ? e : e.currentTarget.dataset.organization_id;
+    // const index = this.data.organizations.findIndex(organization => organization._id == organization_id);
+    const detail_url = '/pages/organizationDetail/organizationDetail';
+
+    wx.navigateTo({
+      url: detail_url + '?organization_id=' + organization_id,
+    });
+  },
+  
   //转发此页面的设置
   onShareAppMessage: function (ops) {
     if (ops.from === 'button') {
