@@ -1,25 +1,40 @@
 //index.js
 
-var organization_id="1";
-
+var organization_id = "1";
+const setting = {
+  skew: 0,
+  rotate: 90,
+  showLocation: false,
+  showScale: false,
+  subKey: '',
+  layerStyle: 1,
+  enableZoom: true,
+  enableScroll: true,
+  enableRotate: false,
+  showCompass: false,
+  enable3D: false,
+  enableOverlooking: false,
+  enableSatellite: false,
+  enableTraffic: false,
+}
 Page({
   data: {
-    name:"工程猫音",
-    organization_id:"1",
+    organization: {},
     markers: [
-    {
-      iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gongchengmaoyin.png",
-      latitude: 45.775790,
-      longitude: 126.682190,
-      width: 50,
-      height: 50
-    },
-  ],
-    
+      {
+        id: 1,
+        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beiyi.png",
+        latitude: 39.984316,
+        longitude: 116.358886,
+        width: 50,
+        height: 50,
+      },
+    ],
+
 
     controls: [{
       id: 1,
-      iconPath: 'https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/gongchengmaoyin.png',
+      iconPath: '/pages/images/circle.png',
       position: {
         left: 0,
         top: 300 - 50,
@@ -30,14 +45,14 @@ Page({
     }]
   },
 
-    /**
-   * 生命周期函数--监听页面加载
-   */
+  /**
+ * 生命周期函数--监听页面加载
+ */
   onLoad: function (options) {
     organization_id = options.organization_id;
     const that = this;
     console.log("加载detail页码");
-    console.log(organization_id);
+    // console.log(organization_id);
 
     that.loadOrganization();
 
@@ -52,20 +67,19 @@ Page({
       // res.data.characteristics_string = [(res.data.colour || '') + '猫'].conorgan(res.data.characteristics || []).join('，');
       res.data.characteristics_string = (res.data.colour || '') + '猫';
       // res.data.nickname = (res.data.nickname || []).join('、');
+      // console.log(res.data),
 
       this.setData({
-        organization: res.data
-      }, ()=> {
-        this.reloadPhotos();
-        this.loadCommentCount();
-        var query = wx.createSelectorQuery();
-        query.select('#info-box').boundingClientRect();
-        query.exec((res) => {
-          console.log(res[0]);
-          infoHeight = res[0].height;
-        })
+        organization: res.data,
+
       });
     });
+
+    for (var i = 0; i <= this.data.markers.length; ++i) {
+      console.log(i)
+    }
+
+
   },
 
 
@@ -86,7 +100,7 @@ Page({
     }
     return {
       title: this.data.name,
-      path: '/pages/index/index?pageId='+this.data.name,
+      path: '/pages/index/index?pageId=' + this.data.name,
       success: function (res) {
         // 转发成功
       },
@@ -103,7 +117,7 @@ Page({
     }
     return {
       title: this.data.name,
-      path: '/pages/index/index?pageId='+this.data.name,
+      path: '/pages/index/index?pageId=' + this.data.name,
       success: function (res) {
         // 转发成功
       },
@@ -116,36 +130,36 @@ Page({
     wx.stopPullDownRefresh()
   },
   copyTBL: function (e) {
-  var self = this;
-  wx.setClipboardData({
-    data: '北大猫协',//需要复制的内容
-    success: function (res) {
-      // self.setData({copyTip:true}),
-     
-    }
-  })
+    var self = this;
+    wx.setClipboardData({
+      data: '北大猫协',//需要复制的内容
+      success: function (res) {
+        // self.setData({copyTip:true}),
+
+      }
+    })
   },
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '工程猫音',//需要复制的内容
+      data: this.data.organization.officialAccount[0],//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
-       
+
       }
     })
-    },
-  naviToMini:function(e){
+  },
+  naviToMini: function (e) {
     wx.navigateToMiniProgram({
-      appId: 'wx79e5a0a57e47ba21',
+      appId: this.data.organization.miniprogramId[0],
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {
         // 打开成功
       }
     })
-   }
-  
+  }
+
 })
 
 
