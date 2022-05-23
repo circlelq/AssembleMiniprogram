@@ -20,29 +20,8 @@ const setting = {
 Page({
   data: {
     organization: {},
-    markers: [
-      {
-        id: 1,
-        iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/beiyi.png",
-        latitude: 39.984316,
-        longitude: 116.358886,
-        width: 50,
-        height: 50,
-      },
-    ],
+    markers: [],
 
-
-    controls: [{
-      id: 1,
-      iconPath: '/pages/images/circle.png',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
-    }]
   },
 
   /**
@@ -53,31 +32,40 @@ Page({
     const that = this;
     console.log("加载detail页码");
     // console.log(organization_id);
+    const db = wx.cloud.database();
+    db.collection('organization').doc(organization_id).get().then(res => {
+      console.log(res);
 
-    that.loadOrganization();
+      this.setData({
+        organization: res.data,
+      });
+    }).then(res => {
+      var number = 0
+      for (var i in this.data.organization.markers) {
+        var marker = [
+          {
+            iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.organization.name) + ".png",
+            latitude: this.data.organization.markers[i].latitude,
+            longitude: this.data.organization.markers[i].longitude,
+            width: 50,
+            height: 50,
+            id: number,
+          }
+        ]
+        this.setData({
+          markers: this.data.markers.concat(marker),
+        });
+        // console.log(this.data.markers)
+        number++
+      }
+    });
 
 
   },
 
-  loadOrganization() {
-    const db = wx.cloud.database();
-    db.collection('organization').doc(organization_id).get().then(res => {
-      console.log(res);
-      res.data.photo = [];
-      // res.data.characteristics_string = [(res.data.colour || '') + '猫'].conorgan(res.data.characteristics || []).join('，');
-      res.data.characteristics_string = (res.data.colour || '') + '猫';
-      // res.data.nickname = (res.data.nickname || []).join('、');
-      // console.log(res.data),
 
-      this.setData({
-        organization: res.data,
+  onShow: function (options) {
 
-      });
-    });
-
-    for (var i = 0; i <= this.data.markers.length; ++i) {
-      console.log(i)
-    }
 
 
   },
@@ -129,29 +117,36 @@ Page({
   onPullDownRefresh: function () {
     wx.stopPullDownRefresh()
   },
-  copyTBL: function (e) {
+  copyBili: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: '北大猫协',//需要复制的内容
+      data: this.data.organization.officialAccount['bili'],//需要复制的内容
       success: function (res) {
-        // self.setData({copyTip:true}),
-
+        console.log("复制成功")
       }
     })
   },
-  copy2: function (e) {
+  copyWeibo: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: this.data.organization.officialAccount[0],//需要复制的内容
+      data: this.data.organization.officialAccount['weibo'],//需要复制的内容
       success: function (res) {
-        // self.setData({copyTip:true}),
-
+        console.log("复制成功")
+      }
+    })
+  },
+  copyWechat: function (e) {
+    var self = this;
+    wx.setClipboardData({
+      data: this.data.organization.officialAccount['wechat'],//需要复制的内容
+      success: function (res) {
+        console.log("复制成功")
       }
     })
   },
   naviToMini: function (e) {
     wx.navigateToMiniProgram({
-      appId: this.data.organization.miniprogramId[0],
+      appId: this.data.organization.officialAccount['miniprogram'],
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {
