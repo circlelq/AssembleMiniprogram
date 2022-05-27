@@ -46,13 +46,13 @@
 
 
 <view  class = "logo">
-  <view bindtap="bindweb" style='flex-shrink:0; box-sizing:border-box; width:3rem;'>
+  <view style='flex-shrink:0; box-sizing:border-box; width:3rem;'>
     <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/circle.png" ></image>
 
   </view>
 </view>
 
-<view class="staff">© 2022-05-13 circle</view>
+<view class="staff">© 2022 circle</view>
 
 
 <text> \n </text>

@@ -32,7 +32,7 @@
 <text> \n </text>
 
 <view style="display:flex; justify-content:center; align-items:center;">
-  <map id="map" longitude="{{organization.miniMap.longitude}}" latitude="{{organization.miniMap.latitude}}" scale="{{organization.miniMap.scale}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+  <map id="map" longitude="{{organization.miniMap.centerPoint.longitude}}" latitude="{{organization.miniMap.centerPoint.latitude}}" scale="{{organization.miniMap.scale}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
 </view>
 
 
