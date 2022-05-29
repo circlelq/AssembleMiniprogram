@@ -675,7 +675,7 @@ Page({
     console.log("加载detail页码");
     // console.log(organization_id);
     const db = wx.cloud.database();
-    db.collection('organization').get().then(res => {
+    db.collection('organization').orderBy('name', 'asc').get().then(res => {
       console.log(res);
       this.setData({
         allOrganization: res['data'],

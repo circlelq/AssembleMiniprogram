@@ -21,7 +21,7 @@ Page({
   data: {
     organization: {},
     markers: [],
-
+    photoscr: "",
   },
 
   /**
@@ -38,6 +38,7 @@ Page({
 
       this.setData({
         organization: res.data,
+        photoscr: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + res.data.name + ".png"
       });
     }).then(res => {
       var number = 0
@@ -60,7 +61,20 @@ Page({
       }
     });
 
+  },
 
+  includePointsOne() {
+    const mapCtx = wx.createMapContext('map', this);
+    mapCtx.includePoints({
+      padding: [60, 36, 0, 36],
+      points: this.data.markers,
+      success: res => {
+        console.log('includePoints success');
+      },
+      fail: err => {
+        console.log('includePoints fail', err);
+      }
+    });
   },
 
 

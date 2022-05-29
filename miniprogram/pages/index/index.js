@@ -255,7 +255,7 @@ Page({
       url: detail_url + '?organization_id=' + organization_id,
     });
   },
-  
+
   //转发此页面的设置
   onShareAppMessage: function (ops) {
     if (ops.from === 'button') {

@@ -1,6 +1,6 @@
 <view class="title">{{organization.name}}</view>
 <view style="display:flex; justify-content:center; align-items:center;">
-  <image mode="widthFix" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/{{organization.name}}.png" style="width: 80%;">
+  <image mode="widthFix" src="{{photoscr}}" style="width: 70%;">
   </image>
 </view>
 
@@ -13,7 +13,7 @@
     <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 公众号 </view>
   </view>
-  <view wx:if="{{organization.officialAccount['bili']}}" bindtap="copybili" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+  <view wx:if="{{organization.officialAccount['bili']}}" bindtap="copyBili" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/bili.png"></image>
     <view style="text-align: center;  color:#353535;"> \n B 站 </view>
   </view>
@@ -32,7 +32,7 @@
 <text> \n </text>
 
 <view style="display:flex; justify-content:center; align-items:center;">
-  <map id="map" longitude="{{organization.miniMap.centerPoint.longitude}}" latitude="{{organization.miniMap.centerPoint.latitude}}" scale="{{organization.miniMap.scale}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+  <map id="map"  bindcontroltap="controltap" bindupdated="includePointsOne" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
 </view>
 
 
