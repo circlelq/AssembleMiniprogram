@@ -227,11 +227,10 @@ Page({
     // console.log(db)
     const organization = db.collection('organization');
 
-    db.collection('organization').get({
+    db.collection('organization').orderBy('pinyin', 'asc').get({
       // const new_organizations = organizations.concat(res.data);
       success: function (res) {
         // res.data 包含该记录的数据
-        console.log('test')
         that.setData({
           organization: res.data,
           // loading: false,
