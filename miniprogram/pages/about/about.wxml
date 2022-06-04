@@ -5,49 +5,46 @@
 <view class="head1">小程序介绍</view>
 
 <view class="body">
-此小程序用来搜集各高校小动物保护组织的信息。欢迎大家加入此小程序，向 circle 提供信息，加入后可随时退出。
+  此小程序用来搜集各高校小动物保护组织的信息。欢迎大家加入此小程序，加入后可随时退出。
 </view>
 
 <view class="head1">特别注意</view>
 
 <view class="body">
-<view class="bodybold">• 请不要将宠物抛弃在校园内！！！</view>
+  <view class="bodybold">• 请不要将宠物抛弃在校园内！！！</view>
 </view>
 
 <view class="body">
-• 此小程序只是一个索引，不为信息准确性负责。
+  • 此小程序只是一个索引，不为信息准确性负责。
 </view>
 
 <view class="body">
 
-• 组织按照拼音首字母进行排序。
+  • 组织按照拼音首字母进行排序。
 </view>
 
-<view class="body">
-此小程序只介绍组织信息，不介绍具体猫咪信息。考虑到猫咪的安全问题，circle 不建议各位的小程序里填写猫咪的出没地点信息。
 
-</view>
 
 <view class="head1">联系我们</view>
 
 <view class="body">
-欢迎给 circle 的<text bindtap="copy1" class="copy">邮箱</text> yuanlq@pku.edu.cn 发邮件。如果要加入此小程序，提供文字介绍信息和会徽图片即可。
+  欢迎给 circle 的<text bindtap="copy1" class="copy">邮箱</text> yuanlq@pku.edu.cn 发邮件。如果要加入此小程序，提供文字介绍信息和会徽图片即可。
 </view>
 
 <view class="body">
-此<text bindtap="copy2" class="copy">小程序</text>所有代码开源，使用 MIT License ，欢迎其它小程序或公众号引用此小程序。
+  此<text bindtap="copy2" class="copy">小程序</text>所有代码开源，使用 MIT License ，欢迎其它小程序或公众号引用此小程序，点击蓝色字小程序复制网址后可以在浏览器打开，网站提供了此小程序的头像和 appid。
 </view>
 
 <view class="body">
-另外，欢迎大家使用<text bindtap="copy3" class="copy">燕园猫速查手册</text>小程序和<text bindtap="copy4" class="copy">中大猫谱</text>的代码，都配有视频教学，简单易用。请点击蓝字复制 GitHub 仓库链接后在浏览器中粘贴打开。
+  另外，欢迎大家使用<text bindtap="copy3" class="copy">燕园猫速查手册</text>小程序和<text bindtap="copy4" class="copy">中大猫谱</text>的代码，都配有视频教学，简单易用。请点击蓝字复制 GitHub 仓库链接后在浏览器中粘贴打开。
 </view>
 
 <text> \n </text>
 
 
-<view  class = "logo">
+<view class="logo">
   <view style='flex-shrink:0; box-sizing:border-box; width:3rem;'>
-    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/circle.png" ></image>
+    <image style="width:3rem;height:3rem;" src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/circle.png"></image>
 
   </view>
 </view>

@@ -22,7 +22,7 @@
 </block>
 
 
-<block wx:for="{{organ_list}}">
+<!-- <block wx:for="{{organ_list}}">
   <navigator url="/pages/organization/{{item.name}}/{{item.name}}">
     <view class="catitem">
       <image class='avator ' src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/{{item.pinyin}}.png" mode='aspectFill'></image>
@@ -30,4 +30,4 @@
     </view>
     <view class="divLine"></view>
   </navigator>
-</block>
+</block> -->

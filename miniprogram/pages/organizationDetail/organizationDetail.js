@@ -1,22 +1,7 @@
 //index.js
 
 var organization_id = "1";
-const setting = {
-  skew: 0,
-  rotate: 90,
-  showLocation: false,
-  showScale: false,
-  subKey: '',
-  layerStyle: 1,
-  enableZoom: true,
-  enableScroll: true,
-  enableRotate: false,
-  showCompass: false,
-  enable3D: false,
-  enableOverlooking: false,
-  enableSatellite: false,
-  enableTraffic: false,
-}
+
 Page({
   data: {
     organization: {},
@@ -80,8 +65,6 @@ Page({
 
   onShow: function (options) {
 
-
-
   },
 
 
@@ -101,8 +84,8 @@ Page({
       console.log(res.target)
     }
     return {
-      title: this.data.name,
-      path: '/pages/index/index?pageId=' + this.data.name,
+      title: this.data.organization.name,
+      path: '/pages/organizationDetail/organizationDetail?organization_id=' + this.data.organization._id,
       success: function (res) {
         // 转发成功
       },
@@ -118,8 +101,8 @@ Page({
       console.log(res.target)
     }
     return {
-      title: this.data.name,
-      path: '/pages/index/index?pageId=' + this.data.name,
+      title: this.data.organization.name,
+      path: '/pages/organizationDetail/organizationDetail?organization_id=' + this.data.organization._id,
       success: function (res) {
         // 转发成功
       },
@@ -158,9 +141,28 @@ Page({
       }
     })
   },
+  copyMail: function (e) {
+    var self = this;
+    wx.setClipboardData({
+      data: this.data.organization.officialAccount['mail'],//需要复制的内容
+      success: function (res) {
+        console.log("复制成功")
+      }
+    })
+  },
   naviToMini: function (e) {
     wx.navigateToMiniProgram({
       appId: this.data.organization.officialAccount['miniprogram'],
+      // path: 'pages/index/index',
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
+      }
+    })
+  },
+  naviToMini1: function (e) {
+    wx.navigateToMiniProgram({
+      appId: this.data.organization.officialAccount['miniprogram1'],
       // path: 'pages/index/index',
       envVersion: 'release',
       success(res) {

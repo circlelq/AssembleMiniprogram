@@ -1,4 +1,6 @@
-<view class="title">{{organization.name}}</view>
+<view class="title">
+  <text user-select="true">{{organization.name}}</text>
+</view>
 <view style="display:flex; justify-content:center; align-items:center;">
   <image mode="widthFix" src="{{photoscr}}" style="width: 70%;">
   </image>
@@ -6,6 +8,10 @@
 
 <view class="itemname1">
   <view wx:if="{{organization.officialAccount['miniprogram']}}" bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 小程序 </view>
+  </view>
+  <view wx:if="{{organization.officialAccount['miniprogram1']}}" bindtap="naviToMini1" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 小程序 </view>
   </view>
@@ -21,18 +27,22 @@
     <image style="width:3rem;height:3rem;" src="/pages/images/weibo.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 微博 </view>
   </view>
+  <view wx:if="{{organization.officialAccount['mail']}}" bindtap="copyMail" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/mail.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 邮箱 </view>
+  </view>
 </view>
 
 <block wx:for="{{organization.mainContent}}">
   <view class="{{item[0]}}">
-    {{item[1]}}
+    <text user-select="true">{{item[1]}}</text>
   </view>
 </block>
 
 <text> \n </text>
 
 <view style="display:flex; justify-content:center; align-items:center;">
-  <map id="map"  bindcontroltap="controltap" bindupdated="includePointsOne" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
+  <map id="map" bindcontroltap="controltap" bindupdated="includePointsOne" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 90%; height: 300px;"></map>
 </view>
 
 

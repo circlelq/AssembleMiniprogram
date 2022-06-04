@@ -54,7 +54,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'https://github.com/circlelq/AssembleMiniprogram',//需要复制的内容
+      data: 'https://gitee.com/circlelq/AssembleMiniprogram',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
 
