@@ -7,27 +7,31 @@
 </view>
 
 <view class="itemname1">
-  <view wx:if="{{organization.officialAccount['miniprogram']}}" bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+  <view wx:if="{{organization.officialAccount['miniprogram']}}" bindtap="naviToMini" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 小程序 </view>
   </view>
-  <view wx:if="{{organization.officialAccount['miniprogram1']}}" bindtap="naviToMini1" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+  <view wx:if="{{organization.officialAccount['miniprogram1']}}" bindtap="naviToMini1" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/mini.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 小程序 </view>
   </view>
-  <view wx:if="{{organization.officialAccount['wechat']}}" bindtap="copyWechat" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+  <view wx:if="{{organization.officialAccount['wechat']}}" bindtap="copyWechat" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/gongzhong.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 公众号 </view>
   </view>
-  <view wx:if="{{organization.officialAccount['bili']}}" bindtap="copyBili" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+  <view wx:if="{{organization.officialAccount['bili']}}" bindtap="copyBili" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/bili.png"></image>
     <view style="text-align: center;  color:#353535;"> \n B 站 </view>
   </view>
-  <view wx:if="{{organization.officialAccount['weibo']}}" bindtap="copyWeibo" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+  <view wx:if="{{organization.officialAccount['weibo']}}" bindtap="copyWeibo" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/weibo.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 微博 </view>
   </view>
-  <view wx:if="{{organization.officialAccount['mail']}}" bindtap="copyMail" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem;'>
+  <view wx:if="{{organization.officialAccount['weibo']}}" bindtap="copyShu" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/shu.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 小红书 </view>
+  </view>
+  <view wx:if="{{organization.officialAccount['mail']}}" bindtap="copyMail" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/mail.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 邮箱 </view>
   </view>
