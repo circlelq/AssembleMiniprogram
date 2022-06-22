@@ -52,5 +52,6 @@
     "ignore": [],
     "include": []
   },
-  "appid": "wx0fb7b06a5065be09"
+  "appid": "wx0fb7b06a5065be09",
+  "lazyCodeLoading": "requiredComponents"
 }
