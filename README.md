@@ -61,4 +61,4 @@ MIT (不包括各个组织的 logo)
 
 # 更新日志
 
-[更新日志](changLog.md)
+[更新日志](./changeLog.md)
