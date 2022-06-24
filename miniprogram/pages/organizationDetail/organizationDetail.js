@@ -1,5 +1,3 @@
-//index.js
-
 var organization_id = "1";
 
 Page({
@@ -15,12 +13,9 @@ Page({
   onLoad: function (options) {
     organization_id = options.organization_id;
     const that = this;
-    console.log("加载detail页码");
     // console.log(organization_id);
     const db = wx.cloud.database();
     db.collection('organization').doc(organization_id).get().then(res => {
-      console.log(res);
-
       this.setData({
         organization: res.data,
         photoscr: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + res.data.name + ".png"
@@ -45,7 +40,6 @@ Page({
         number++
       }
     });
-
   },
 
   includePointsOne() {
@@ -111,9 +105,7 @@ Page({
       }
     }
   },
-  onPullDownRefresh: function () {
-    wx.stopPullDownRefresh()
-  },
+
   copyBili: function (e) {
     var self = this;
     wx.setClipboardData({

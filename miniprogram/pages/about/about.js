@@ -36,10 +36,6 @@ Page({
     }
   },
 
-  onPullDownRefresh: function () {
-    wx.stopPullDownRefresh()
-  },
-
   copy1: function (e) {
     var self = this;
     wx.setClipboardData({

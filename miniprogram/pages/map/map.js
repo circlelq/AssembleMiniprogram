@@ -49,14 +49,13 @@ Page({
     })
     var number = 0
     for (var organizationNum in this.data.allOrganization) {
-      // console.log(this.data.allOrganization[organizationNum])
       for (var i in this.data.allOrganization[organizationNum].markers) {
-        // console.log(this.data.allOrganization[organizationNum]._id)
         var marker = [
           {
             iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.allOrganization[organizationNum].name) + ".png",
             latitude: this.data.allOrganization[organizationNum].markers[i].latitude,
             longitude: this.data.allOrganization[organizationNum].markers[i].longitude,
+            joinCluster: true,
             width: 50,
             height: 50,
             organization_id: this.data.allOrganization[organizationNum]._id,
@@ -66,13 +65,30 @@ Page({
         this.setData({
           markers: this.data.markers.concat(marker),
         });
-        // console.log(this.data.markers)
         number++
       }
     }
-    // console.log(this.data.markers);
 
-
+    const mapCtx = wx.createMapContext('map', this);
+    mapCtx.includePoints({
+      padding: [60, 36, 0, 36],
+      points: this.data.markers,
+      success: res => {
+        console.log('includePoints success');
+        mapCtx.initMarkerCluster({
+          gridSize: 10,
+          success: res => {
+            console.log('initMarkerCluster success');
+          },
+          fail: err => {
+            console.log('initMarkerCluster fail', err);
+          }
+        });
+      },
+      fail: err => {
+        console.log('includePoints fail', err);
+      }
+    });
   },
 
   controltap(e) {
@@ -106,4 +122,5 @@ Page({
       }
     }
   },
+
 })

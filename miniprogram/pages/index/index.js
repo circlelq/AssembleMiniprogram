@@ -3,50 +3,42 @@ Page({
     organization: [
     ],
   },
-  navbarTap: function (e) {
-    this.setData({
-      currentTab: e.currentTarget.dataset.idx
-    })
-  },
-
-  iconType: [
-    'success', 'success_no_circle', 'info', 'warn', 'waiting', 'cancel', 'download', 'search', 'clear'
-  ],
-
-  onPullDownRefresh: function () {
-    wx.stopPullDownRefresh()
-  },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: async function (options) {
+  onLoad: function (options) {
     if (options.pageId) {
       wx.navigateTo({
         url: '/pages/organization/' + options.pageId + '/' + options.pageId,
       })
     }
+    this.loadMoreOrganization();
+  },
+
+  loadMoreOrganization() {
+    const organization = this.data.organization;
     const that = this;
     const db = wx.cloud.database();
-    var count = await db.collection('organization').count();
-    var count = count.total;
-    // console.log(count);
-    var allOrganization = []
 
-    for (let i = 0; i < count; i += 20) {
-      let list = await db.collection('organization').orderBy('pinyin', 'asc').skip(i).get();
-      allOrganization = allOrganization.concat(list.data)
-    }
-    that.setData({
-      organization: allOrganization,
-    });
+    db.collection('organization').orderBy('pinyin', 'asc').skip(organization.length).get().then(res => {
+      that.setData({
+        organization: organization.concat(res.data),
+      })
+    })
 
+  },
+
+  /**
+ * 页面上拉触底事件的处理函数
+ */
+  onReachBottom: function () {
+    this.loadMoreOrganization();
   },
 
   // 点击组织
   clickOrganization(e, isOrganizationId = false) {
     const organization_id = isOrganizationId ? e : e.currentTarget.dataset.organization_id;
-    // const index = this.data.organizations.findIndex(organization => organization._id == organization_id);
     const detail_url = '/pages/organizationDetail/organizationDetail';
 
     wx.navigateTo({
@@ -101,31 +93,6 @@ Page({
       })
     }
   },
-  copyTBL: function (e) {
-    var self = this;
-    wx.setClipboardData({
-      data: '北大猫协',//需要复制的内容
-      success: function (res) {
-        // self.setData({copyTip:true}),
-
-      }
-    })
-  },
-
-  naviToMini: function (e) {
-    wx.navigateToMiniProgram({
-      appId: '',
-      path: 'page/index/index?id=123',
-      extraData: {
-        foo: 'bar'
-      },
-      envVersion: 'release',
-      success(res) {
-        // 打开成功
-      }
-    })
-  }
-
 
 })
 
