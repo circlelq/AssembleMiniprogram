@@ -1,22 +1,17 @@
 {
-	"name": "AWC小动物保护社团",
+	"name": "石大的猫",
 	"markers": {
 		"0": {
-			"coordinates": [120.739895, 31.273504],
+			"coordinates": [108.653779, 34.102838],
 			"type": "Point"
 		}
 	},
 	"officialAccount": {
-		"wechat": "AWC小动物保护社团",
-		"miniprogram": "wx4d6e5d1daac325ce"
+		"wechat": "石大的猫",
+		"miniprogram": "wxaa804fbc4f6efb7c"
 	},
 	"mainContent": [
-		["body", "Hi，这里是小动物保护协会（AWC），是一个隶属于西交利物浦大学的公益类社团。"],
-		["body", "这里是爱护小动物青年的聚集地，自2017年成立起，我们便致力于保护流浪的小动物，宣传，实践与维护，是我们社团的核心内容并且从救助，领养等多个角度帮助流浪小动物，相信爱的力量必定能够使水滴汇聚成大海。"],
-		["body", "今天的举手之劳，或许就可给予日后的它一份温暖，在此我们呼吁，善待小动物，不要虐待遗弃它们，以领养代替购买。与此同时，我们针对西交利物浦大学周边的流浪猫猫和狗狗们的基本信息，制作了这款小程序，希望能把猫猫和狗狗的可爱与日常传递给你。也希望那个爱护小动物的你也能时不时呼唤它们的名字，给它们带去一些惊喜与温暖。"],
-		["body", "Hi, this is Animal Welfare Club (AWC), a charity club affiliated with the Xi‘an Jiaotong- Liverpool University."],
-		["body", "Since its inception in 2017, we have been dedicated to the protection of stray animals. We believe that the power of love can make a drop of water into an ocean."],
-		["body", "A handful of help today may give a warmth to a stray animal in the future, and we call on you to be kind to small animals, not to abuse them, and to adopt instead of buying. At the same time, we have created this app with basic information about the stray animal around the  XJTLU , hoping to pass on their loveliness and daily life to you. We also hope that you, who love small animals, can call their names from time to time and bring them some surprises and warmth."]
+		["body", "hi，这里是石大的猫，我们来自于西安石油大学，是同学们自发成立的民间非盈利公益组织。我们的主旨是科普猫咪知识，宣传领养理念，营造校园和谐环境！喵呜！喵呜！"]
 	],
-	"pinyin": "awcxdwbhst"
+	"pinyin": "sddm"
 }
