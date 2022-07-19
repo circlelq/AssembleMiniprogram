@@ -52,7 +52,7 @@ Page({
       for (var i in this.data.allOrganization[organizationNum].markers) {
         var marker = [
           {
-            iconPath: "https://gitee.com/circlelq/AssembleMiniprogram/raw/master/会徽/" + encodeURIComponent(this.data.allOrganization[organizationNum].name) + ".png",
+            iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.allOrganization[organizationNum].name) + ".png",
             latitude: this.data.allOrganization[organizationNum].markers[i].latitude,
             longitude: this.data.allOrganization[organizationNum].markers[i].longitude,
             joinCluster: true,

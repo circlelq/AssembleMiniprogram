@@ -18,14 +18,14 @@ Page({
     db.collection('organization').doc(organization_id).get().then(res => {
       this.setData({
         organization: res.data,
-        photoscr: "https://gitee.com/circlelq/AssembleMiniprogram/raw/master/会徽/" + res.data.name + ".png"
+        photoscr: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + res.data.name + ".png"
       });
     }).then(res => {
       var number = 0
       for (var i in this.data.organization.markers) {
         var marker = [
           {
-            iconPath: "https://gitee.com/circlelq/AssembleMiniprogram/raw/master/会徽/" + encodeURIComponent(this.data.organization.name) + ".png",
+            iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.organization.name) + ".png",
             latitude: this.data.organization.markers[i].latitude,
             longitude: this.data.organization.markers[i].longitude,
             width: 50,

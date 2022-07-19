@@ -12,7 +12,7 @@
 <block wx:for="{{organization}}" wx:key="_id">
   <view bindtap="clickOrganization" data-organization_id='{{item._id}}'>
     <view class="catitem">
-      <image class='avator ' src="https://gitee.com/circlelq/AssembleMiniprogram/raw/master/会徽/{{item.name}}.png" mode='aspectFill'></image>
+      <image class='avator ' src="https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/{{item.name}}.png" mode='aspectFill'></image>
       <view class="cat-name">{{item.name}}</view>
     </view>
     <view class="divLine"></view>
