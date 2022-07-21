@@ -1,10 +1,12 @@
 // map.js
+const app = getApp();
+
 Page({
 
   data: {
     markers: [
     ],
-
+    allOrganization: {}
   },
   regionchange(e) {
     console.log(e.type)
@@ -32,29 +34,23 @@ Page({
  * 生命周期函数--监听页面加载
  */
   onLoad: async function (options) {
-    const that = this;
-    console.log("加载detail页码");
-    // console.log(organization_id);
-    const db = wx.cloud.database();
-    var count = await db.collection('organization').count();
-    var count = count.total;
-    // console.log(count);
-    var allOrganization = []
-    for (let i = 0; i < count; i += 20) {
-      let list = await db.collection('organization').orderBy('pinyin', 'asc').skip(i).get();
-      allOrganization = allOrganization.concat(list.data)
-    }
-    this.setData({
-      allOrganization: allOrganization,
-    })
+
+    app.mpServerless.db.collection('organization').find(
+      {},
+      {   }
+    ).then(res => {
+      const { result: allOrganization } = res;
+      this.setData({ allOrganization: allOrganization});
+    }).then(res => {
+
     var number = 0
     for (var organizationNum in this.data.allOrganization) {
       for (var i in this.data.allOrganization[organizationNum].markers) {
         var marker = [
           {
-            iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.allOrganization[organizationNum].name) + ".png",
-            latitude: this.data.allOrganization[organizationNum].markers[i].latitude,
-            longitude: this.data.allOrganization[organizationNum].markers[i].longitude,
+            iconPath: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.allOrganization[organizationNum].name) + ".png",
+            latitude: this.data.allOrganization[organizationNum].markers[i].coordinates[1],
+            longitude: this.data.allOrganization[organizationNum].markers[i].coordinates[0],
             joinCluster: true,
             width: 50,
             height: 50,
@@ -68,6 +64,7 @@ Page({
         number++
       }
     }
+  }).then(res => {
 
     const mapCtx = wx.createMapContext('map', this);
     mapCtx.includePoints({
@@ -76,7 +73,7 @@ Page({
       success: res => {
         console.log('includePoints success');
         mapCtx.initMarkerCluster({
-          gridSize: 10,
+          gridSize: 14,
           success: res => {
             console.log('initMarkerCluster success');
           },
@@ -89,6 +86,7 @@ Page({
         console.log('includePoints fail', err);
       }
     });
+  })
   },
 
   controltap(e) {

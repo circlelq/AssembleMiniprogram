@@ -1,3 +1,5 @@
+const app = getApp();
+
 Page({
   data: {
     organization: [
@@ -17,15 +19,19 @@ Page({
   },
 
   loadMoreOrganization() {
+    
     const organization = this.data.organization;
-    const that = this;
-    const db = wx.cloud.database();
+    app.mpServerless.db.collection('organization').find(
+      {},
+      { sort: { pinyin: 1 },
+      skip:organization.length,
+      limit: 20,
+    }
+    ).then(res => {
+      const { result: data } = res;
+      this.setData({ organization: organization.concat(data) });
+    }).catch(console.error);
 
-    db.collection('organization').orderBy('pinyin', 'asc').skip(organization.length).get().then(res => {
-      that.setData({
-        organization: organization.concat(res.data),
-      })
-    })
 
   },
 

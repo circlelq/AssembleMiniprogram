@@ -1,4 +1,5 @@
 var organization_id = "1";
+const app = getApp();
 
 Page({
   data: {
@@ -12,22 +13,25 @@ Page({
  */
   onLoad: function (options) {
     organization_id = options.organization_id;
-    const that = this;
-    // console.log(organization_id);
-    const db = wx.cloud.database();
-    db.collection('organization').doc(organization_id).get().then(res => {
-      this.setData({
-        organization: res.data,
-        photoscr: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + res.data.name + ".png"
-      });
-    }).then(res => {
+    app.mpServerless.db.collection('organization').find(
+      {
+        _id: organization_id,
+      },
+      {}
+    ).then(res => {
+        this.setData({
+          organization: res.result[0],
+          photoscr: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + res.result[0].name + ".png"
+        });
+      }).then(res => {
       var number = 0
+      
       for (var i in this.data.organization.markers) {
         var marker = [
           {
-            iconPath: "https://6369-circle-test-zdk23-1259206269.tcb.qcloud.la/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.organization.name) + ".png",
-            latitude: this.data.organization.markers[i].latitude,
-            longitude: this.data.organization.markers[i].longitude,
+            iconPath: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.organization.name) + ".png",
+            latitude: this.data.organization.markers[i].coordinates[1],
+            longitude: this.data.organization.markers[i].coordinates[0],
             width: 50,
             height: 50,
             id: number,
@@ -36,7 +40,6 @@ Page({
         this.setData({
           markers: this.data.markers.concat(marker),
         });
-        // console.log(this.data.markers)
         number++
       }
     });

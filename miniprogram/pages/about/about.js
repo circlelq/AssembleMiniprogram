@@ -61,7 +61,7 @@ Page({
   copy3: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'https://github.com/SCCAPKU/miniprogram',//需要复制的内容
+      data: 'https://gitee.com/circlelq/yan-yuan-mao-su-cha-shou-ce',//需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
 
