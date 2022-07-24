@@ -154,6 +154,15 @@ Page({
       }
     })
   },
+  copyDouyin: function (e) {
+    var self = this;
+    wx.setClipboardData({
+      data: this.data.organization.officialAccount['douyin'],//需要复制的内容
+      success: function (res) {
+        console.log("复制成功")
+      }
+    })
+  },
   naviToMini: function (e) {
     wx.navigateToMiniProgram({
       appId: this.data.organization.officialAccount['miniprogram'],

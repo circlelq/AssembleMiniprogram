@@ -27,9 +27,13 @@
     <image style="width:3rem;height:3rem;" src="/pages/images/weibo.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 微博 </view>
   </view>
-  <view wx:if="{{organization.officialAccount['weibo']}}" bindtap="copyShu" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
+  <view wx:if="{{organization.officialAccount['shu']}}" bindtap="copyShu" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/shu.png"></image>
     <view style="text-align: center;  color:#353535;"> \n 小红书 </view>
+  </view>
+  <view wx:if="{{organization.officialAccount['douyin']}}" bindtap="copyDouyin" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
+    <image style="width:3rem;height:3rem;" src="/pages/images/douyin.png"></image>
+    <view style="text-align: center;  color:#353535;"> \n 抖音 </view>
   </view>
   <view wx:if="{{organization.officialAccount['mail']}}" bindtap="copyMail" style='flex-shrink:0; box-sizing:border-box; width:3rem; margin-right:2rem; margin-bottom:1rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/mail.png"></image>
