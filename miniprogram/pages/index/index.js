@@ -19,14 +19,15 @@ Page({
   },
 
   loadMoreOrganization() {
-    
+
     const organization = this.data.organization;
     app.mpServerless.db.collection('organization').find(
       {},
-      { sort: { pinyin: 1 },
-      skip:organization.length,
-      limit: 20,
-    }
+      {
+        sort: { pinyin: 1 },
+        skip: organization.length,
+        limit: 20,
+      }
     ).then(res => {
       const { result: data } = res;
       this.setData({ organization: organization.concat(data) });

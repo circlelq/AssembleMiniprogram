@@ -7,7 +7,7 @@ const mpServerless = new MPServerless({
   getAuthCode: wx.login,
   getFileInfo: wx.getFileInfo,
   getImageInfo: wx.getImageInfo,
-},  {
+}, {
   appId: 'wx0fb7b06a5065be09', // 小程序应用标识
   spaceId: 'mp-1dca94ec-a727-4ec3-85a5-fe2b9e4cbdcd', // 服务空间标识
   clientSecret: 'dtm04jkG302vz54XGXV5zQ==', // 服务空间 secret key

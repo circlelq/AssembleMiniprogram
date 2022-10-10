@@ -4,15 +4,15 @@
   flex-direction: column;
   justify-content: center;
 
-} 
+}
 
 .itemname1 {
   font-size: 27rpx;
   margin-left: 40rpx;
   margin-bottom: 30rpx;
   margin-top: 30rpx;
-  display:flex;
-  color:#888888;
+  display: flex;
+  color: #888888;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -20,8 +20,8 @@
 
 .itemname2 {
   font-size: 30rpx;
-  color:#353535;
-  font-weight:normal;
+  color: #353535;
+  font-weight: normal;
   margin-right: 40rpx;
   margin-bottom: 30rpx;
 }
@@ -38,18 +38,18 @@
   text-align: center;
   margin-top: 14rpx;
   margin-bottom: 14rpx;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .head1 {
   font-size: 35rpx;
   margin-left: 40rpx;
   margin-right: 40rpx;
-  line-height:25rpx;
+  line-height: 25rpx;
   margin-bottom: 30rpx;
   margin-top: 50rpx;
-  font-weight:bold;
-  color:black;
+  font-weight: bold;
+  color: black;
   text-align: left;
 }
 
@@ -59,34 +59,31 @@
   margin-right: 40rpx;
   margin-bottom: 30rpx;
   margin-top: 14rpx;
-  color:#353535;
+  color: #353535;
   letter-spacing: 5rpx;
   line-height: 55rpx;
   text-align: justify;
 }
 
+/*搜索框*/
 .search {
-  font-size: 35rpx;
-  /* margin-left: 40rpx; */
-  margin-right: 40rpx;
-  line-height:25rpx;
-  margin-bottom: 30rpx;
-  margin-top: 20rpx;
-  text-align: left;
+  font-size: 32rpx;
+  margin-left: 150rpx;
+  height: 32rpx;
 }
 
 .bodybold {
-  font-weight:bold;
+  font-weight: bold;
 }
 
 /* 会徽 */
-.board image{
+.board image {
   width: 100%;
   height: 300rpx;
   border-bottom: 1rpx solid #eee;
 }
 
-.circle{
+.circle {
   /* height: 100rpx; */
   margin-top: 60rpx;
   margin-bottom: 50rpx;
@@ -96,7 +93,7 @@
 }
 
 /*每一只猫*/
-.catitem{
+.catitem {
   /* height: 100rpx; */
   margin-top: 30rpx;
   margin-bottom: 30rpx;
@@ -106,30 +103,27 @@
 }
 
 /*分割线样式*/
-.divLine{
- background: #eee;
- height: 3rpx;
- margin-left: 150rpx;
-
+.divLine {
+  background: #eee;
+  height: 3rpx;
+  margin-left: 150rpx;
 }
 
 /*长分割线样式*/
-.divLineLong{
+.divLineLong {
   background: #eee;
   height: 3rpx;
-  margin-left: 40rpx;  
+  margin-left: 40rpx;
 }
 
 /*猫名称*/
-.cat-name{
+.cat-name {
   font-size: 32rpx;
-  flex-direction:row;
+  flex-direction: row;
   margin-left: 150rpx;
-  color:#353535;
+  color: #353535;
   text-align: center;
 }
-
-
 
 .avator {
   width: 80rpx;
@@ -137,23 +131,23 @@
   margin-left: 40rpx;
   position: absolute;
   align-items: center;
-  display:flex;
+  display: flex;
 }
 
-.copy{
+.copy {
   color: #576b95;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.play{
- width:45rpx;
- height: 45rpx;
- margin-right: 20rpx;
+.play {
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 20rpx;
 }
 
 .staff {
   font-size: 20rpx;
-  color:#888888;
+  color: #888888;
   /* position: absolute; */
   bottom: 20rpx;
   width: 100%;
@@ -168,14 +162,14 @@
 
 .cat-card {
   font-size: 45rpx;
-  color:black; 
-  font-weight:bold;
+  color: black;
+  font-weight: bold;
   justify-content: flex-start;
 }
 
 .sound {
   margin-top: 9rpx;
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }

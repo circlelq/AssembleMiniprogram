@@ -19,13 +19,13 @@ Page({
       },
       {}
     ).then(res => {
-        this.setData({
-          organization: res.result[0],
-          photoscr: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + res.result[0].name + ".png"
-        });
-      }).then(res => {
+      this.setData({
+        organization: res.result[0],
+        photoscr: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + res.result[0].name + ".png"
+      });
+    }).then(res => {
       var number = 0
-      
+
       for (var i in this.data.organization.markers) {
         var marker = [
           {

@@ -34,5 +34,9 @@
       "desc": "你的位置信息将用于导航去小动物保护组织"
     }
   },
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
 }

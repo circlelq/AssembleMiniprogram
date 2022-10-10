@@ -37,56 +37,56 @@ Page({
 
     app.mpServerless.db.collection('organization').find(
       {},
-      {   }
+      {}
     ).then(res => {
       const { result: allOrganization } = res;
-      this.setData({ allOrganization: allOrganization});
+      this.setData({ allOrganization: allOrganization });
     }).then(res => {
 
-    var number = 0
-    for (var organizationNum in this.data.allOrganization) {
-      for (var i in this.data.allOrganization[organizationNum].markers) {
-        var marker = [
-          {
-            iconPath: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.allOrganization[organizationNum].name) + ".png",
-            latitude: this.data.allOrganization[organizationNum].markers[i].coordinates[1],
-            longitude: this.data.allOrganization[organizationNum].markers[i].coordinates[0],
-            joinCluster: true,
-            width: 50,
-            height: 50,
-            organization_id: this.data.allOrganization[organizationNum]._id,
-            id: number,
-          }
-        ]
-        this.setData({
-          markers: this.data.markers.concat(marker),
-        });
-        number++
+      var number = 0
+      for (var organizationNum in this.data.allOrganization) {
+        for (var i in this.data.allOrganization[organizationNum].markers) {
+          var marker = [
+            {
+              iconPath: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.allOrganization[organizationNum].name) + ".png",
+              latitude: this.data.allOrganization[organizationNum].markers[i].coordinates[1],
+              longitude: this.data.allOrganization[organizationNum].markers[i].coordinates[0],
+              joinCluster: true,
+              width: 50,
+              height: 50,
+              organization_id: this.data.allOrganization[organizationNum]._id,
+              id: number,
+            }
+          ]
+          this.setData({
+            markers: this.data.markers.concat(marker),
+          });
+          number++
+        }
       }
-    }
-  }).then(res => {
+    }).then(res => {
 
-    const mapCtx = wx.createMapContext('map', this);
-    mapCtx.includePoints({
-      padding: [60, 36, 0, 36],
-      points: this.data.markers,
-      success: res => {
-        console.log('includePoints success');
-        mapCtx.initMarkerCluster({
-          gridSize: 14,
-          success: res => {
-            console.log('initMarkerCluster success');
-          },
-          fail: err => {
-            console.log('initMarkerCluster fail', err);
-          }
-        });
-      },
-      fail: err => {
-        console.log('includePoints fail', err);
-      }
-    });
-  })
+      const mapCtx = wx.createMapContext('map', this);
+      mapCtx.includePoints({
+        padding: [60, 36, 0, 36],
+        points: this.data.markers,
+        success: res => {
+          console.log('includePoints success');
+          mapCtx.initMarkerCluster({
+            gridSize: 14,
+            success: res => {
+              console.log('initMarkerCluster success');
+            },
+            fail: err => {
+              console.log('initMarkerCluster fail', err);
+            }
+          });
+        },
+        fail: err => {
+          console.log('includePoints fail', err);
+        }
+      });
+    })
   },
 
   controltap(e) {
