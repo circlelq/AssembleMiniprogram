@@ -36,7 +36,7 @@
 </view>
 
 <view class="body">
-  另外，欢迎大家使用<text bindtap="copy3" class="copy">燕园猫速查手册</text>小程序和<text bindtap="copy4" class="copy">中大猫谱</text>的代码，都配有视频教学，简单易用。请点击蓝字复制 GitHub 仓库链接后在浏览器中粘贴打开。
+  另外，欢迎大家使用<text bindtap="copy3" class="copy">燕园猫速查手册</text>小程序和<text bindtap="copy4" class="copy">中大猫谱</text>的代码，都配有视频教学，简单易用。请点击蓝字复制 Gitee 仓库链接后在浏览器中粘贴打开。
 </view>
 
 <text> \n </text>
@@ -45,10 +45,13 @@
 <view class="logo">
   <view style='flex-shrink:0; box-sizing:border-box; width:3rem;'>
     <image style="width:3rem;height:3rem;" src="/pages/images/circle.png"></image>
-
   </view>
 </view>
 
-<view class="staff">© 2022 circle</view>
 
+
+
+<view class="weui-footer">
+  <view class="weui-footer__text">© 2022 circle</view>
+</view>
 <text> \n </text>

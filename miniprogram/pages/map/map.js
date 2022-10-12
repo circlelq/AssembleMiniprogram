@@ -121,4 +121,30 @@ Page({
     }
   },
 
+
+  // 点击回位
+  clickBack() {
+
+    const mapCtx = wx.createMapContext('map', this);
+    mapCtx.includePoints({
+      padding: [60, 36, 0, 36],
+      points: this.data.markers,
+      success: res => {
+        console.log('includePoints success');
+        mapCtx.initMarkerCluster({
+          gridSize: 14,
+          success: res => {
+            console.log('initMarkerCluster success');
+          },
+          fail: err => {
+            console.log('initMarkerCluster fail', err);
+          }
+        });
+      },
+      fail: err => {
+        console.log('includePoints fail', err);
+      }
+    });
+  }
+
 })

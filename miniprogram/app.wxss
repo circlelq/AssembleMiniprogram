@@ -42,26 +42,26 @@
 }
 
 .head1 {
-  font-size: 35rpx;
+  font-size: 37rpx;
   margin-left: 40rpx;
   margin-right: 40rpx;
   line-height: 25rpx;
-  margin-bottom: 30rpx;
-  margin-top: 50rpx;
+  margin-bottom: 25rpx;
+  margin-top: 70rpx;
   font-weight: bold;
   color: black;
   text-align: left;
 }
 
 .body {
-  font-size: 30rpx;
+  font-size: 32rpx;
   margin-left: 40rpx;
   margin-right: 40rpx;
-  margin-bottom: 30rpx;
-  margin-top: 14rpx;
+  margin-bottom: 25rpx;
+  margin-top: 25rpx;
   color: #353535;
   letter-spacing: 5rpx;
-  line-height: 55rpx;
+  line-height: 50rpx;
   text-align: justify;
 }
 
@@ -143,16 +143,6 @@
   width: 45rpx;
   height: 45rpx;
   margin-right: 20rpx;
-}
-
-.staff {
-  font-size: 20rpx;
-  color: #888888;
-  /* position: absolute; */
-  bottom: 20rpx;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .cat_image {

@@ -3,3 +3,4 @@ page {
   flex-direction: column;
   height: 100%;
 }
+.page{background-color:var(--weui-BG-2)}

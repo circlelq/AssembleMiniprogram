@@ -26,13 +26,12 @@ Page({
       {
         sort: { pinyin: 1 },
         skip: organization.length,
-        limit: 20,
+        // limit: 20,
       }
     ).then(res => {
       const { result: data } = res;
       this.setData({ organization: organization.concat(data) });
     }).catch(console.error);
-
 
   },
 
@@ -102,4 +101,3 @@ Page({
   },
 
 })
-
