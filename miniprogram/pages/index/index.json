@@ -1,6 +1,2 @@
 {
-  "usingComponents": {
-    "mp-icon": "weui-miniprogram/icon/icon",
-    "mp-loadmore": "weui-miniprogram/loadmore/loadmore"
-  }
 }

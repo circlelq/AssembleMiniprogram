@@ -36,7 +36,6 @@
   },
   "lazyCodeLoading": "requiredComponents",
   "useExtendedLib": {
-    "kbone": true,
     "weui": true
   }
 }
