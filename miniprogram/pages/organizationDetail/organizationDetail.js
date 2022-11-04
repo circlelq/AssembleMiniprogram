@@ -25,7 +25,6 @@ Page({
       });
     }).then(res => {
       var number = 0
-
       for (var i in this.data.organization.markers) {
         var marker = [
           {
@@ -105,6 +104,23 @@ Page({
       },
       fail: function (res) {
         // 转发失败
+      }
+    }
+  },
+
+
+  markertap(event) {
+    console.log(event.detail.markerId)
+    const markers = this.data.markers;
+    for (let i = 0; i < markers.length; i++) {
+      if (event.markerId === markers[i].id) {
+        wx.openLocation({
+          latitude: parseFloat(markers[i].latitude),
+          longitude: parseFloat(markers[i].longitude),
+          name: markers[i].name,
+          address: markers[i].name
+        })
+
       }
     }
   },

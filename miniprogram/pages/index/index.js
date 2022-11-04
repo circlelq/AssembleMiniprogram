@@ -19,7 +19,6 @@ Page({
   },
 
   loadMoreOrganization() {
-
     const organization = this.data.organization;
     app.mpServerless.db.collection('organization').find(
       {},
@@ -32,7 +31,6 @@ Page({
       const { result: data } = res;
       this.setData({ organization: organization.concat(data) });
     }).catch(console.error);
-
   },
 
   /**
@@ -92,12 +90,18 @@ Page({
 
   // 搜索栏输入名字后页面跳转
   bindconfirmT: function (e) {
-    console.log("e.detail.value");
     if (e.detail.value) {
-      wx.navigateTo({
-        url: '/pages/organization/' + e.detail.value + '/' + e.detail.value,
-      })
+      const organization = this.data.organization;
+      app.mpServerless.db.collection('organization').find(
+        {
+          name: e.detail.value
+        },
+        {}
+      ).then(res => {
+        wx.navigateTo({
+          url: '/pages/organizationDetail/organizationDetail?organization_id=' + res.result[0]._id,
+        })
+      }).catch(console.error);
     }
   },
-
 })
