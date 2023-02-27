@@ -1,4 +1,3 @@
-
 //app.js
 import MPServerless from '@alicloud/mpserverless-sdk';
 const mpServerless = new MPServerless({

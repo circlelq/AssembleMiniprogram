@@ -10,10 +10,10 @@ Page({
   //转发功能
   onShareAppMessage: function () {
     let users = wx.getStorageSync('user');
-    if (res.from === 'button') { }
+    if (res.from === 'button') {}
     return {
-      path: 'pages/about/about',  // 路径，传递参数到指定页面。
-      success: function (res) { }
+      path: 'pages/about/about', // 路径，传递参数到指定页面。
+      success: function (res) {}
     }
   },
 
@@ -24,7 +24,7 @@ Page({
       console.log(ops.target)
     }
     return {
-      path: 'pages/about/about',  // 路径，传递参数到指定页面。
+      path: 'pages/about/about', // 路径，传递参数到指定页面。
       success: function (res) {
         // 转发成功
         console.log("转发成功:" + JSON.stringify(res));
@@ -39,7 +39,7 @@ Page({
   copy1: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'yuanlq@pku.edu.cn',//需要复制的内容
+      data: 'yuanlq@pku.edu.cn', //需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
 
@@ -50,7 +50,7 @@ Page({
   copy2: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'https://gitee.com/circlelq/AssembleMiniprogram',//需要复制的内容
+      data: 'https://gitee.com/circlelq/AssembleMiniprogram', //需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
 
@@ -61,7 +61,7 @@ Page({
   copy3: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'https://gitee.com/circlelq/yan-yuan-mao-su-cha-shou-ce',//需要复制的内容
+      data: 'https://gitee.com/circlelq/yan-yuan-mao-su-cha-shou-ce', //需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
 
@@ -72,7 +72,7 @@ Page({
   copy4: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: 'https://github.com/Zing22/zhongdamaopu',//需要复制的内容
+      data: 'https://github.com/Zing22/zhongdamaopu', //需要复制的内容
       success: function (res) {
         // self.setData({copyTip:true}),
 
@@ -80,5 +80,3 @@ Page({
     })
   }
 })
-
-

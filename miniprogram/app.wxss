@@ -94,9 +94,9 @@
 
 /*每一只猫*/
 .catitem {
-  /* height: 100rpx; */
-  margin-top: 30rpx;
-  margin-bottom: 30rpx;
+  height: 110rpx;
+  /* margin-top: 30rpx;
+  margin-bottom: 30rpx; */
   display: flex;
   align-items: center;
   width: 100%;

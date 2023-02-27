@@ -1,17 +1,29 @@
 {
-	"name": "中南爱之约",
-	"markers": {
-		"0": {
-			"coordinates": [112.92926,28.16968],
-			"type": "Point"
-		}
-	},
-	"officialAccount": {
-		"wechat": "CSU动保 爱之约",
-		"miniprogram": "wxe9bd62b43723c732"
-	},
-	"mainContent": [
-		["body", "中南爱之约成立于21年4月，是中南大学的一个为爱发电的“民间流浪动物救助组织”"]
-	],
-	"pinyin": "znazy"
+  "name": "青岛科技大学动物关爱协会",
+  "markers": {
+    "0": {
+      "coordinates": [
+        120.38933,
+        36.149517
+      ],
+      "type": "Point"
+    },
+    "1": {
+      "coordinates": [
+        120.483512,
+        36.121325
+      ],
+      "type": "Point"
+    }
+  },
+  "officialAccount": {
+    "wechat": "青岛科技大学动物关爱协会"
+  },
+  "mainContent": [
+    [
+      "body",
+      "本协会名称为青岛科技大学动物关爱协会( Animal Protection Society of qust），是以青岛科技大学校内有爱心、热爱公益事业、有救助流浪小动物的意向的同学为基础建成的社团组织，本着自愿的原则，为公益志愿类组织。"
+    ]
+  ],
+  "pinyin": "qdkjdxdwgaxh"
 }

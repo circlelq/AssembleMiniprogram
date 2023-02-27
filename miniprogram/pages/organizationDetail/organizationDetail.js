@@ -9,16 +9,13 @@ Page({
   },
 
   /**
- * 生命周期函数--监听页面加载
- */
+   * 生命周期函数--监听页面加载
+   */
   onLoad: function (options) {
     organization_id = options.organization_id;
-    app.mpServerless.db.collection('organization').find(
-      {
-        _id: organization_id,
-      },
-      {}
-    ).then(res => {
+    app.mpServerless.db.collection('organization').find({
+      _id: organization_id,
+    }, {}).then(res => {
       this.setData({
         organization: res.result[0],
         photoscr: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + res.result[0].name + ".png"
@@ -26,16 +23,14 @@ Page({
     }).then(res => {
       var number = 0
       for (var i in this.data.organization.markers) {
-        var marker = [
-          {
-            iconPath: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.organization.name) + ".png",
-            latitude: this.data.organization.markers[i].coordinates[1],
-            longitude: this.data.organization.markers[i].coordinates[0],
-            width: 50,
-            height: 50,
-            id: number,
-          }
-        ]
+        var marker = [{
+          iconPath: "https://assemble-1257850266.cos.ap-nanjing.myqcloud.com/%E4%BC%9A%E5%BE%BD/" + encodeURIComponent(this.data.organization.name) + ".png",
+          latitude: this.data.organization.markers[i].coordinates[1],
+          longitude: this.data.organization.markers[i].coordinates[0],
+          width: 50,
+          height: 50,
+          id: number,
+        }]
         this.setData({
           markers: this.data.markers.concat(marker),
         });
@@ -128,7 +123,7 @@ Page({
   copyBili: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: this.data.organization.officialAccount['bili'],//需要复制的内容
+      data: this.data.organization.officialAccount['bili'], //需要复制的内容
       success: function (res) {
         console.log("复制成功")
       }
@@ -137,7 +132,7 @@ Page({
   copyWeibo: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: this.data.organization.officialAccount['weibo'],//需要复制的内容
+      data: this.data.organization.officialAccount['weibo'], //需要复制的内容
       success: function (res) {
         console.log("复制成功")
       }
@@ -146,7 +141,7 @@ Page({
   copyWechat: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: this.data.organization.officialAccount['wechat'],//需要复制的内容
+      data: this.data.organization.officialAccount['wechat'], //需要复制的内容
       success: function (res) {
         console.log("复制成功")
       }
@@ -155,7 +150,7 @@ Page({
   copyMail: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: this.data.organization.officialAccount['mail'],//需要复制的内容
+      data: this.data.organization.officialAccount['mail'], //需要复制的内容
       success: function (res) {
         console.log("复制成功")
       }
@@ -164,7 +159,7 @@ Page({
   copyShu: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: this.data.organization.officialAccount['shu'],//需要复制的内容
+      data: this.data.organization.officialAccount['shu'], //需要复制的内容
       success: function (res) {
         console.log("复制成功")
       }
@@ -173,7 +168,7 @@ Page({
   copyDouyin: function (e) {
     var self = this;
     wx.setClipboardData({
-      data: this.data.organization.officialAccount['douyin'],//需要复制的内容
+      data: this.data.organization.officialAccount['douyin'], //需要复制的内容
       success: function (res) {
         console.log("复制成功")
       }
@@ -201,5 +196,3 @@ Page({
   }
 
 })
-
-
