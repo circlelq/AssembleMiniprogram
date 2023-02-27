@@ -1,7 +1,7 @@
 /* pages/about/about.wxss */
 
 .logo {
-  font-size: 20rpx;
+  font-size: 30rpx;
   position: relative;
   bottom: 20rpx;
   width: 100%;

@@ -43,8 +43,8 @@
 
 
 <view class="logo">
-  <view style='flex-shrink:0; box-sizing:border-box; width:3rem;'>
-    <image style="width:3rem;height:3rem;" src="/pages/images/circle.png"></image>
+  <view style='flex-shrink:0; box-sizing:border-box; width:80rpx;'>
+    <image style="width:80rpx;height:80rpx;" src="/pages/images/circle.png"></image>
   </view>
 </view>
 
