@@ -70,6 +70,7 @@
   font-size: 32rpx;
   margin-left: 150rpx;
   height: 32rpx;
+  color: #557e56;
 }
 
 .bodybold {

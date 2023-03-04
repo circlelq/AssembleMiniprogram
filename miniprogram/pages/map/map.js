@@ -15,7 +15,6 @@ Page({
     const markers = this.data.markers;
     for (let i = 0; i < markers.length; i++) {
       if (event.markerId === markers[i].id) {
-        console.log(event.detail.markerId)
         wx.navigateTo({
           url: '/pages/organizationDetail/organizationDetail' + '?organization_id=' + markers[i].organization_id,
           success: (result) => {
@@ -24,7 +23,6 @@ Page({
           fail: (res) => {},
           complete: (res) => {},
         })
-
       }
     }
   },
@@ -33,7 +31,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
-
     app.mpServerless.db.collection('organization').find({}, {}).then(res => {
       const {
         result: allOrganization
@@ -42,7 +39,6 @@ Page({
         allOrganization: allOrganization
       });
     }).then(res => {
-
       var number = 0
       for (var organizationNum in this.data.allOrganization) {
         for (var i in this.data.allOrganization[organizationNum].markers) {
@@ -63,7 +59,6 @@ Page({
         }
       }
     }).then(res => {
-
       const mapCtx = wx.createMapContext('map', this);
       mapCtx.includePoints({
         padding: [60, 36, 0, 36],
@@ -119,10 +114,8 @@ Page({
     }
   },
 
-
   // 点击回位
   clickBack() {
-
     const mapCtx = wx.createMapContext('map', this);
     mapCtx.includePoints({
       padding: [60, 36, 0, 36],
@@ -144,5 +137,4 @@ Page({
       }
     });
   }
-
 })
