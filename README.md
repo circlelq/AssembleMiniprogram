@@ -11,6 +11,8 @@
 
 ![小程序图片](miniprogram/pages/images/circle.png)
 
+<img src="circle.png" width = "100" height = "100" />
+
 ### 特别注意
 
 - **请不要将宠物抛弃在校园内！！！**
