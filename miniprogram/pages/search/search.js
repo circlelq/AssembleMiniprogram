@@ -60,14 +60,14 @@ Page({
   bindKeyInput: function (e) {
     if (e.detail.value == "") {
       this.setData({
-        inputValue: "NaN"
+        organization: []
       })
     } else {
       this.setData({
-        inputValue: "(?i)" + e.detail.value
+        inputValue: "(?i)" + "(.*)(" + e.detail.value.split('').join(')(.*)(') + ")(.*)"
       })
+      this.loadMoreOrganization();
     }
-    this.loadMoreOrganization();
   },
 
   // 搜索栏输入名字后页面跳转
