@@ -65,14 +65,6 @@
   text-align: justify;
 }
 
-/*搜索框*/
-.search {
-  font-size: 32rpx;
-  margin-left: 150rpx;
-  height: 32rpx;
-  color: #557e56;
-}
-
 .bodybold {
   font-weight: bold;
 }
@@ -85,9 +77,9 @@
 }
 
 .circle {
-  /* height: 100rpx; */
-  margin-top: 60rpx;
-  margin-bottom: 50rpx;
+  height: 150rpx;
+  /* margin-top: 30rpx;
+  margin-bottom: 30rpx; */
   display: flex;
   align-items: center;
   width: 100%;

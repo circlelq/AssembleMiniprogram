@@ -3,6 +3,7 @@ const app = getApp();
 Page({
   data: {
     organization: [],
+    inputValue: "NaN",
   },
 
   /**
@@ -19,18 +20,22 @@ Page({
 
   loadMoreOrganization() {
     const organization = this.data.organization;
-    app.mpServerless.db.collection('organization').find({}, {
+    app.mpServerless.db.collection('organization').find({
+      name: {
+        $regex: this.data.inputValue
+      }
+    }, {
       sort: {
         pinyin: 1
       },
-      skip: organization.length,
-      limit: 20,
+      // skip: organization.length,
+      // limit: 20,
     }).then(res => {
       const {
         result: data
       } = res;
       this.setData({
-        organization: organization.concat(data)
+        organization: data
       });
     }).catch(console.error);
   },
@@ -52,42 +57,17 @@ Page({
     });
   },
 
-  //转发此页面的设置
-  onShareAppMessage: function (ops) {
-    if (ops.from === 'button') {
-      // 来自页面内转发按钮
-      console.log(ops.target)
+  bindKeyInput: function (e) {
+    if (e.detail.value == "") {
+      this.setData({
+        inputValue: "NaN"
+      })
+    } else {
+      this.setData({
+        inputValue: "(?i)" + e.detail.value
+      })
     }
-    return {
-      path: 'pages/index/index', // 路径，传递参数到指定页面。
-      success: function (res) {
-        // 转发成功
-        console.log("转发成功:" + JSON.stringify(res));
-      },
-      fail: function (res) {
-        // 转发失败
-        console.log("转发失败:" + JSON.stringify(res));
-      }
-    }
-  },
-
-  // 转发到朋友圈
-  onShareTimeline: function (res) {
-    if (ops.from === 'button') {
-      // 来自页面内转发按钮
-      console.log(ops.target)
-    }
-    return {
-      path: 'pages/index/index', // 路径，传递参数到指定页面。
-      success: function (res) {
-        // 转发成功
-        console.log("转发成功:" + JSON.stringify(res));
-      },
-      fail: function (res) {
-        // 转发失败
-        console.log("转发失败:" + JSON.stringify(res));
-      }
-    }
+    this.loadMoreOrganization();
   },
 
   // 搜索栏输入名字后页面跳转
